@@ -1,0 +1,40 @@
+
+----- This document will provide information about the architecture of the project -----
+
+
+
+1) Start a project: 
+	
+	-> Development		=	In vscode open the "Project" folder, check if your terminal in vscode is also in the "Project" folder.
+					If the terminal is at the right place type: "npm start", this will generate the code and you will get a response url where the site is available.
+					-> localhost:4200
+	-> Testing		=	In your terminal on your pc go to the folder and use the ./start.sh . This will start the file.
+	-> Server side		=	The same commands will be used from remote scripts.
+
+
+2) Github:
+	
+	-> Start project	=	Open a terminal on your computer and use "git clone git@github.com:DeFranco13/BIP_Project.git"
+					This will copy the main branch on your pc. After the cloning is done go to de folder and type: "git init", this will make the environment for using github.
+					You have to make a server point connection to push the data to. You do this by typing: "git remote add origin git@github.com:DeFranco13/BIP_Project.git"
+
+	-> Push			= 	*BEFORE* you decide to push always pull first! Otherwise we will experience merging conflict on outdated data!
+					To push:  	- git add . ( this will select all the files)
+							- git commit -m "<Your commit message, like what did u change...>"
+							- git push origin dev	-> If you experience errors contact us in the discord so we can debug the conflict.
+	
+	-> Pull			= 	git pull origin dev
+
+	-> Merge		=	Mergin will be done in the github cli on github itself; We also make use of the github auto-merge. 
+					Please always pull before you push otherwise we will always have merging errors.
+
+	-> Change branche	= 	We are working with 3 branches: dev (developing), prod (production), backup
+					While working on these branches we will all work in dev, when we have a working version we will copy them to backup and prod.
+
+3) Kubernetes:
+
+	-> We will configure this later.
+
+
+
+-----
