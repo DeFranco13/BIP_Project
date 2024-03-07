@@ -35,6 +35,14 @@
 
 	-> We will configure this later.
 
+4) Architecture:
+
+	-> Code will be python and angular. Angular will handle the user in- and output while python script will calculate the results. We can visualize the resulst with python also with the help of 
+		panda libraries.
+	-> Frontend will be angular, html and css.
+	-> Security will be Oauth.
+	-> Networking for scaling will be Kubernetes.
+	-> Database for login accounts or even resulst will be saved on a vm that is configured in the network.
 
 
 -----
