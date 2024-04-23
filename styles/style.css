@@ -1,0 +1,83 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+/*-------------------------------------
+        Header
+--------------------------------------*/
+
+.top-area{
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+}
+
+header{
+    height: 10vh;
+    background-color: white;
+    border: 0.1px solid red;
+}
+header nav{
+    display: flex;
+}
+header nav .navbar-header{
+    margin-top: 1.5rem;
+    margin-right: 17rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header nav .navbar-header a {
+    text-decoration: none;
+    color: #ee4444;
+}
+header nav .navbar-menu ul{
+    display: flex;
+}
+header nav .navbar-menu ul li{
+    margin-top: 1.5rem;
+    margin-right: 5rem;
+}
+header nav .navbar-menu ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+
+/*-------------------------------------
+        Carousel
+--------------------------------------*/
+
+.carousel{
+    padding-top: 10vh;
+    height: 70vh;
+    background-color: blue;
+}
+
+/*-------------------------------------
+        Main
+--------------------------------------*/
+
+/* Color and height is just for testing, change it as u want. */
+.information{
+    height: 20vh;
+    background-color: green;
+}
+
+.calculator{
+    height: 20vh;
+    background-color: red;
+}
+
+.about{
+    height: 20vh;
+    background-color: gray;
+}
