@@ -115,16 +115,6 @@ body {
     background-color: rgba(34, 34, 51, 0.61);
 }
 
-.card > .row > .icon {
-    background: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
 
 .card > .row > .description {
     display: flex;
@@ -161,6 +151,83 @@ input:checked + label {
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
+}
+
+.icon1 {
+    background-image: url(./materialslogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon2 {
+    background-image: url(./energylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon3 {
+    background-image: url(./waterlogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon4 {
+    background-image: url(./biodiversitylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon5 {
+    background-image: url(./societylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon6 {
+    background-image: url(./healthlogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon7 {
+    background-image: url(./valuelogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
 .card[for="c1"] {
