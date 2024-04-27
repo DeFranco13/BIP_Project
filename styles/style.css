@@ -112,6 +112,7 @@ body {
     color: white;
     display: flex;
     flex-wrap: nowrap;
+    background-color: rgba(34, 34, 51, 0.61);
 }
 
 .card > .row > .icon {
@@ -139,13 +140,13 @@ body {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #ffffffce;
     padding-top: 5px;
 }
 
 .description h4 {
     text-transform: uppercase;
-    color: #676a81;
+    color: #e6e6e6;
     font-weight: 600;
 }
 
@@ -163,16 +164,25 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./carousel1.jpg');
+    background-image: url('./materials.jpg');
 }
 .card[for="c2"] {
-    background-image: url('./carousel2.jpg');
+    background-image: url('./renewable\ energy.jpg');
 }
 .card[for="c3"] {
-    background-image: url('');
+    background-image: url('./Rainwater\ Catchment\ Indonesia.jpg');
 }
 .card[for="c4"] {
-    background-image: url('');
+    background-image: url('./biodiversity.jpg');
+}
+.card[for="c5"] {
+    background-image: url('./society.jpg');
+}
+.card[for="c6"] {
+    background-image: url('./health.jpg');
+}
+.card[for="c7"] {
+    background-image: url('./value.jpg');
 }
 
 /*-------------------------------------
