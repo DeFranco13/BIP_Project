@@ -2,10 +2,14 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-size:16px;
 	color: #676a81;
-	background: #fff;
+	background: #ffffff;
     max-width:1920px;
     margin:0 auto;
 	overflow-x:hidden;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*-------------------------------------
@@ -16,40 +20,45 @@ body{
     position: fixed;
     z-index: 9999;
     width: 100vw;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
 header{
     height: 10vh;
-    background-color: white;
-    border: 0.1px solid red;
+    background-color: rgb(248, 245, 245);
+    border: 0.1px solid rgb(248, 245, 245);
 }
 header nav{
     display: flex;
 }
 header nav .navbar-header{
-    margin-top: 1.5rem;
-    margin-right: 17rem;
-    margin-left: 2rem;
+    margin-top: 2.2rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
 header nav .navbar-header a {
     text-decoration: none;
-    color: #ee4444;
+    color: #7ca50a;
+
 }
 header nav .navbar-menu ul{
     display: flex;
+    margin-left: 13rem;
 }
 header nav .navbar-menu ul li{
-    margin-top: 1.5rem;
-    margin-right: 5rem;
+    margin-top: 2.4rem;
+    margin-right: 7rem;
+    
 }
 header nav .navbar-menu ul li a {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none; 
+    color: #838282;
+    font-weight: 100;
 }
 
 /*-------------------------------------
@@ -58,8 +67,122 @@ header nav .navbar-menu ul li a {
 
 .carousel{
     padding-top: 10vh;
-    height: 70vh;
-    background-color: blue;
+    height: 75vh;
+    
+    background-image: url('./carousel3.jpg');
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+   
+}
+
+body {
+    background-color: #eeeeea;
+}
+
+.wrapper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(34, 34, 51, 0.61);
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #ffffffce;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #e6e6e6;
+    font-weight: 600;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./materials.jpg');
+}
+.card[for="c2"] {
+    background-image: url('./renewable\ energy.jpg');
+}
+.card[for="c3"] {
+    background-image: url('./Rainwater\ Catchment\ Indonesia.jpg');
+}
+.card[for="c4"] {
+    background-image: url('./biodiversity.jpg');
+}
+.card[for="c5"] {
+    background-image: url('./society.jpg');
+}
+.card[for="c6"] {
+    background-image: url('./health.jpg');
+}
+.card[for="c7"] {
+    background-image: url('./value.jpg');
 }
 
 /*-------------------------------------
@@ -67,17 +190,77 @@ header nav .navbar-menu ul li a {
 --------------------------------------*/
 
 /* Color and height is just for testing, change it as u want. */
-.information{
-    height: 20vh;
-    background-color: green;
+
+hr {
+    height: 0rem;
+    border: 0rem;
+    border-top: 1px solid #e9e9e9;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    background: rgb(255, 255, 255)   
 }
 
-.calculator{
+
+
+
+.line_caption{
+    color: #504d4d;
+    background-color:  #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.line_caption_dark{
+    color: #504d4d;
+    background-color: #fafafa;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+
+.information{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3rem;
     height: 20vh;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.calculator{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3rem;
+    height: 20vh;
+    background-color: #fafafa;
 }
 
 .about{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3rem;
     height: 20vh;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*-------------------------------------
+        Footer
+--------------------------------------*/
+
+.footer{
+    font-size: 16px;
+    color: rgb(168, 168, 168);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(255, 255, 255);
 }
