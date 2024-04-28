@@ -317,13 +317,259 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 31rem;
+    height: 19rem;
     background-color: rgb(255, 255, 255);
     padding-left: 16.5rem;
     padding-right: 16.5rem;
     line-height: 2rem;
 }
 
+
+
+
+
+.row{
+
+    background-color: #ffffff;
+}
+
+.photo1{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 16.5rem;
+
+
+}
+
+.person1 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 20.4rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person1 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 16.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo2{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 36.15rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person2 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 40.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person2 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 36.3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo3{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 55.8rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person3 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 57.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person3 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 61.1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+
+.photo4{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 75.45rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person4 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 79.9rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person4 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 81rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+
+.photo5{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 16.5rem;
+
+
+}
+
+.person5 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 20rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person5 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 21.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo6{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 36.15rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person6 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 40.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person6 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 41.4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo7{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 55.8rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person7 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 59.4rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person7 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 61.1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
 
 /*-------------------------------------
         Footer
