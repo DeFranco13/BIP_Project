@@ -33,8 +33,8 @@ header nav{
 }
 header nav .navbar-header{
     margin-top: 2.2rem;
-    margin-right: 20rem;
-    margin-left: 20rem;
+    margin-right: 16.5rem;
+    margin-left: 16.5rem;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -46,11 +46,11 @@ header nav .navbar-header a {
 }
 header nav .navbar-menu ul{
     display: flex;
-    margin-left: 13rem;
+    margin-left: 16.5rem;
 }
 header nav .navbar-menu ul li{
     margin-top: 2.4rem;
-    margin-right: 7rem;
+    margin-right: 7.5rem;
     
 }
 header nav .navbar-menu ul li a {
@@ -115,16 +115,6 @@ body {
     background-color: rgba(34, 34, 51, 0.61);
 }
 
-.card > .row > .icon {
-    background: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
 
 .card > .row > .description {
     display: flex;
@@ -161,6 +151,83 @@ input:checked + label {
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
+}
+
+.icon1 {
+    background-image: url(./materialslogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon2 {
+    background-image: url(./energylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon3 {
+    background-image: url(./waterlogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon4 {
+    background-image: url(./biodiversitylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon5 {
+    background-image: url(./societylogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon6 {
+    background-image: url(./healthlogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.icon7 {
+    background-image: url(./valuelogo1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
 .card[for="c1"] {
@@ -228,10 +295,13 @@ hr {
 
 .information{
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     padding-top: 3rem;
-    height: 20vh;
+    height: 31rem;
     background-color: rgb(255, 255, 255);
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+    line-height: 2rem;
 }
 
 
@@ -245,12 +315,261 @@ hr {
 
 .about{
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     padding-top: 3rem;
-    height: 20vh;
+    height: 19rem;
     background-color: rgb(255, 255, 255);
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+    line-height: 2rem;
 }
 
+
+
+
+
+.row{
+
+    background-color: #ffffff;
+}
+
+.photo1{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 16.5rem;
+
+
+}
+
+.person1 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 20.4rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person1 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 16.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo2{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 36.15rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person2 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 40.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person2 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 36.3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo3{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 55.8rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person3 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 57.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person3 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 61.1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+
+.photo4{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 75.45rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person4 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 79.9rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person4 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 81rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+
+.photo5{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 16.5rem;
+
+
+}
+
+.person5 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 20rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person5 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 21.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo6{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 36.15rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person6 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 40.2rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person6 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 41.4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
+
+.photo7{
+    background-color: #504d4d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 55.8rem;
+    margin-block-start: -22.6rem;
+
+
+}
+
+.person7 h4{
+    font-size: 20px;
+    text-align: justify;
+    padding-inline-start: 59.4rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.person7 p{
+    font-size: 17.5px;
+    text-align: justify;
+    padding-inline-start: 61.1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#c2c2c2;
+    background-color: #ffffff;
+}
 
 /*-------------------------------------
         Footer
