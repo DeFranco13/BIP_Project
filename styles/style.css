@@ -154,7 +154,7 @@ input:checked + label .description {
 }
 
 .icon1 {
-    background-image: url(./materialslogo1.jpg);
+    background-image: url(./images/materialslogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -165,7 +165,7 @@ input:checked + label .description {
 }
 
 .icon2 {
-    background-image: url(./energylogo1.jpg);
+    background-image: url(./images/energylogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -176,7 +176,7 @@ input:checked + label .description {
 }
 
 .icon3 {
-    background-image: url(./waterlogo1.jpg);
+    background-image: url(./images/waterlogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -187,7 +187,7 @@ input:checked + label .description {
 }
 
 .icon4 {
-    background-image: url(./biodiversitylogo1.jpg);
+    background-image: url(./images/biodiversitylogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -198,7 +198,7 @@ input:checked + label .description {
 }
 
 .icon5 {
-    background-image: url(./societylogo1.jpg);
+    background-image: url(./images/societylogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -209,7 +209,7 @@ input:checked + label .description {
 }
 
 .icon6 {
-    background-image: url(./healthlogo1.jpg);
+    background-image: url(./images/healthlogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -220,7 +220,7 @@ input:checked + label .description {
 }
 
 .icon7 {
-    background-image: url(./valuelogo1.jpg);
+    background-image: url(./images/valuelogo1.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 50px;
@@ -231,25 +231,25 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./materials.jpg');
+    background-image: url('./images/materials.jpg');
 }
 .card[for="c2"] {
-    background-image: url('./renewable\ energy.jpg');
+    background-image: url('./images/renewable\ energy.jpg');
 }
 .card[for="c3"] {
-    background-image: url('./Rainwater\ Catchment\ Indonesia.jpg');
+    background-image: url('./images/Rainwater\ Catchment\ Indonesia.jpg');
 }
 .card[for="c4"] {
-    background-image: url('./biodiversity.jpg');
+    background-image: url('./images/biodiversity.jpg');
 }
 .card[for="c5"] {
-    background-image: url('./society.jpg');
+    background-image: url('./images/society.jpg');
 }
 .card[for="c6"] {
-    background-image: url('./health.jpg');
+    background-image: url('./images/health.jpg');
 }
 .card[for="c7"] {
-    background-image: url('./value.jpg');
+    background-image: url('./images/value.jpg');
 }
 
 /*-------------------------------------
