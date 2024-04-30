@@ -25,23 +25,29 @@ html{
 
 header{
     height: 10vh;
-    background-color: rgb(248, 245, 245);
-    border: 0.1px solid rgb(248, 245, 245);
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(255, 255, 255);
 }
 header nav{
     display: flex;
 }
 header nav .navbar-header{
     margin-top: 2.2rem;
-    margin-right: 16.5rem;
-    margin-left: 16.5rem;
+    margin-right: 35.2rem;
+    margin-left: 13.5rem;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
 header nav .navbar-header a {
-    text-decoration: none;
-    color: #7ca50a;
+    margin-top: -0.80rem;
+    width: 14rem;
+    height: 50px;
+    background-image: url('./images/logo.jpg');
+    background-size: cover;
+    display: flex;
+    background-position: 0 -47px;
+    
 
 }
 header nav .navbar-menu ul{
@@ -100,7 +106,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;
-    margin: 0 10px;
+    margin: 0 16.2px;
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
@@ -257,7 +263,7 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 40rem;
+    height: 28rem;
     background-color: rgb(255, 255, 255);
     padding-left: 16.5rem;
     padding-right: 16.5rem;
@@ -277,7 +283,7 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 120rem;
+    height: 78rem;
     background-color: rgb(255, 255, 255);
     padding-left: 16.5rem;
     padding-right: 16.5rem;
@@ -287,17 +293,17 @@ hr {
     margin-top: 3rem;
 }
 .persons {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
 }
 .personA, .personB, .personC, .personD, .personE, .personF, .personG {
     background-size: cover;
-    width: 270px;
+    width: 320px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0rem;
+    margin-right: 1.45rem;
     margin-top: 10px;
     
 }
@@ -305,9 +311,9 @@ hr {
     background-color: #504d4d;
     background-size: cover;
     border-radius: 50%;
-    width: 260px;
-    height: 260px;
-    margin-left: 5px;
+    width: 320px;
+    height: 320px;
+    margin-left: 20px;
     margin-top: 10px;
     margin-right: 20px;
 }
@@ -316,11 +322,13 @@ hr {
     padding-top: 1rem;
     text-align: center;
     font-weight: 600;
+    margin-left: 40px;
 }
 
 .person-description p {
     font-size: 17.5px;
     text-align: center;
+    margin-left: 40px;
 }
 
 
@@ -335,5 +343,5 @@ hr {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: rgb(255, 255, 255);
-    margin-top: 10vh;
+    
 }
