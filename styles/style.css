@@ -319,6 +319,7 @@ hr {
     margin-top: 1vh;
     
 }
+
 .person-description h4{
     font-size: 20px;
     padding-top: 1rem;
@@ -376,4 +377,17 @@ hr {
     padding-bottom: 3rem;
     background-color: rgb(255, 255, 255);
     
+}
+
+
+/*-------------------------------------
+        Media queries
+--------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+    /* This will adjust the height and width for desktop users*/
+    .person-photo {
+        width: 320px; 
+        height: 320px; 
+    }
 }
