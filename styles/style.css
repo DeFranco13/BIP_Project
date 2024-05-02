@@ -74,7 +74,7 @@ header nav .navbar-menu ul li a {
     
     background-image: url('./images/carousel3.jpg');
     background-size: 100vw;
-    background-position: 0 -5px;
+    background-position: 0 -50px;
     background-repeat: no-repeat;
    
 }
@@ -92,14 +92,14 @@ body {
 }
 
 .container {
-    height: 500px;
+    height: 50vh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
 }
 
 .card {
-    width: 80px;
+    width: 5vw;
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
@@ -125,8 +125,8 @@ body {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
-    width: 619.5px;
+    height: 10vh;
+    width: 35vw;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
@@ -135,7 +135,7 @@ body {
 
 .description p {
     color: #ffffffce;
-    padding-top: 5px;
+    padding-top: 0.5vh;
 }
 
 .description h4 {
@@ -149,7 +149,7 @@ input {
 }
 
 input:checked + label {
-    width: 700px;
+    width: 40vw;
 }
 
 input:checked + label .description {
@@ -157,15 +157,16 @@ input:checked + label .description {
     transform: translateY(0) !important;
 }
 
+
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7 {
     background-size: cover;
     border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 3.5vw;
     margin: 15px;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
 }
+
 
 .icon1 {
     background-image: url(./images/materialslogo1.jpg);
@@ -262,7 +263,7 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 28rem;
+    height: 90vh;
     background-color: rgb(255, 255, 255);
     padding-left: 16.5rem;
     padding-right: 16.5rem;
@@ -282,7 +283,7 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 78rem;
+    height: 250vh;
     background-color: rgb(255, 255, 255);
     padding-left: 16.5rem;
     padding-right: 16.5rem;
@@ -299,35 +300,35 @@ hr {
 }
 .personA, .personB, .personC, .personD, .personE, .personF, .personG {
     background-size: cover;
-    width: 320px;
-    height: 500px;
+    width: 25vw;
+    height: 60vh;
     margin-left: 0rem;
     margin-right: 1.45rem;
     margin-top: 10px;
+    border: 1px solid red;
     
 }
 .person-photo {
     background-color: #504d4d;
     background-size: cover;
     border-radius: 50%;
-    width: 320px;
-    height: 320px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
+    width: 20vw;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    
 }
 .person-description h4{
     font-size: 20px;
     padding-top: 1rem;
     text-align: center;
     font-weight: 600;
-    margin-left: 40px;
 }
 
 .person-description p {
     font-size: 17.5px;
     text-align: center;
-    margin-left: 40px;
 }
 
 .personA > .person-photo {
