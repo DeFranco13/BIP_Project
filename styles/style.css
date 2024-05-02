@@ -331,6 +331,38 @@ hr {
     margin-left: 40px;
 }
 
+.personA > .person-photo {
+    background-image: url('./images/Max.jpg');
+    background-position: -30px 0;
+    
+}
+
+.personB > .person-photo {
+    background-image: url('./images/Jordi.jpg');
+    background-position: 0 -90px;
+    
+}
+.personC > .person-photo {
+    background-image: url('./images/Bartek.jpg');
+    
+}
+.personD > .person-photo {
+    background-image: url('./images/Pedro.jpg');
+    
+}
+.personE > .person-photo {
+    background-image: url('./images/Nikita.jpg');
+    
+}
+.personF > .person-photo {
+    background-image: url('./images/Joao.jpg');
+    
+}
+.personG > .person-photo {
+    background-image: url('./images/Mulabiza.jpg');
+    
+}
+
 
 /*-------------------------------------
         Footer
