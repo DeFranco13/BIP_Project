@@ -32,15 +32,14 @@ header nav{
     display: flex;
 }
 header nav .navbar-header{
-    margin-top: 2.2rem;
-    margin-right: 35.2rem;
-    margin-left: 13.5rem;
+    margin-top: 2vh;
+    margin-right: 20vw;
+    margin-left: 13vw;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
 header nav .navbar-header a {
-    margin-top: -0.80rem;
     width: 14rem;
     height: 50px;
     background-image: url('./images/logo.jpg');
