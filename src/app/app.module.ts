@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RouterLink, RouterModule } from '@angular/router';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { RouterLink, RouterModule } from '@angular/router';
     RouterModule,
     RouterModule.forRoot([
       {path: "welcome", component: WelcomeComponent},
-      {path: "", redirectTo: "/welcome", pathMatch: 'full'},
+      {path: "", component: WelcomeComponent},
       {path: "calculator", component: CalculatorComponent}
     ])
   ],

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-welcome',
@@ -8,9 +8,16 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent {
 
-  constructor(private router: Router) { }
-
-  redirectToCalculator() {
-    this.router.navigate(['/calculator']);
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  scrollToInformation(){
+    window.scrollTo({top: 700, behavior: 'smooth'})
+  }
+  scrollToCalculator(){
+    window.scrollTo({top: 1350, behavior: 'smooth'})
+  }
+  scrollToAbout(){
+    window.scrollTo({top: 1650, behavior: 'smooth'})
   }
 }

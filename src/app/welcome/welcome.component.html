@@ -14,13 +14,13 @@
         <header class="top-area">
             <nav>
                 <div class="navbar-header">
-                    <a [routerLink]="['/welcome']"></a>
+                    <a (click)="scrollToTop()"></a>
                 </div>
                 <div class="navbar-menu">
                     <ul>
-                        <li><a href="#information" target="_top">Information</a></li>
-                        <li><a href="#calculator">Calculator</a></li>
-                        <li><a href="#about">About us</a></li>
+                        <li><a (click)="scrollToInformation()">Information</a></li>
+                        <li><a (click)="scrollToCalculator()">Calculator</a></li>
+                        <li><a (click)="scrollToAbout()">About us</a></li>
                         <li><a href="">Login</a></li>
                     </ul>
                 </div>

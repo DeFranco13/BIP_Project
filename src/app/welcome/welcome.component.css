@@ -43,8 +43,10 @@ header nav .navbar-header a {
     background-size: cover;
     display: flex;
     background-position: 0 -47px;
-    
+}
 
+header nav .navbar-header a:hover, header nav .navbar-menu ul li a{
+    cursor: pointer;
 }
 header nav .navbar-menu ul{
     display: flex;
@@ -68,7 +70,7 @@ header nav .navbar-menu ul li a {
 
 .carousel{
     padding-top: 10vh;
-    height: 75vh;
+    height: 80vh;
     
     background-image: url('./images/carousel3.jpg');
     background-size: 100vw;
