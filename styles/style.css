@@ -33,8 +33,8 @@ header nav{
 }
 header nav .navbar-header{
     margin-top: 2vh;
-    margin-right: 20vw;
-    margin-left: 13vw;
+    margin-right: 35.8vw;
+    margin-left: 6.5vw;
 }
 header nav .navbar-header a {
     width: 14rem;
@@ -50,7 +50,7 @@ header nav .navbar-menu ul{
     display: flex;
 }
 header nav .navbar-menu ul li{
-    margin-top: 4.6vh;
+    margin-top: 4.2vh;
     margin-right: 5vw;
     
 }
@@ -76,6 +76,7 @@ header nav .navbar-menu ul li a {
     background-size: 100vw;
     background-position: 0 -50px;
     background-repeat: no-repeat;
+    position: relative;
    
 }
 
@@ -160,6 +161,7 @@ input:checked + label .description {
 
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7 {
     background-size: cover;
+  
     border-radius: 50%;
     width: 3.5vw;
     margin: 15px;
@@ -227,6 +229,7 @@ input:checked + label .description {
 
 /* Color and height is just for testing, change it as u want. */
 
+
 hr {
     height: 0rem;
     border: 0rem;
@@ -235,6 +238,7 @@ hr {
     margin-block-end: 0rem;
     background: rgb(255, 255, 255)   
 }
+
 
 .line_caption{
     color: #504d4d;
@@ -263,10 +267,10 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 90vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
-    padding-left: 16.5rem;
-    padding-right: 16.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     line-height: 2rem;
 }
 
@@ -283,10 +287,10 @@ hr {
     font-size: 18px;
     text-align: justify;
     padding-top: 3rem;
-    height: 255vh;
+    height: 185vh;
     background-color: rgb(255, 255, 255);
-    padding-left: 16.5rem;
-    padding-right: 16.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     line-height: 2rem;
 }
 .person-display {
@@ -295,14 +299,14 @@ hr {
 .persons {
     display:flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 
 }
 .personA, .personB, .personC, .personD, .personE, .personF, .personG {
     background-size: cover;
     width: 25vw;
     height: 50vh;
-    margin-left: 5vw;
+    
     margin-top: 10px;
 }
 .person-photo {
