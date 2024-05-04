@@ -15,9 +15,9 @@ export class WelcomeComponent {
     window.scrollTo({top: 700, behavior: 'smooth'})
   }
   scrollToCalculator(){
-    window.scrollTo({top: 1350, behavior: 'smooth'})
+    window.scrollTo({top: 2300, behavior: 'smooth'})
   }
   scrollToAbout(){
-    window.scrollTo({top: 1650, behavior: 'smooth'})
+    window.scrollTo({top: 2800, behavior: 'smooth'})
   }
 }

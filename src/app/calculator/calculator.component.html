@@ -2,14 +2,24 @@
     <header class="top-area">
         <nav>
             <div class="navbar-header">
-                <a [routerLink]="['/welcome']"></a>
+                <a (click)="scrollToTop()"></a>
             </div>
             <div class="navbar-menu">
                 <ul>
                     <li><a [routerLink]="['/welcome']">Home</a></li>
-                    <li><a href="#information" target="_top">Information</a></li>
+                    <li><a href="#information">Information</a></li>
+                    
                 </ul>
             </div>
         </nav>
       </header>
 </header>
+<main>
+
+    <!--Information section-->
+    <hr>
+        <div id="information" class="line_caption_dark">Information</div> 
+    <hr/>
+    <button>Start Calculator</button>
+
+</main>

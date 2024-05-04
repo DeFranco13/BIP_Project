@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-
+  
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
