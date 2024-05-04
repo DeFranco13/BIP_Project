@@ -1,0 +1,49 @@
+/*-------------------------------------
+        Header
+--------------------------------------*/
+
+.top-area{
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+header{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(255, 255, 255);
+}
+header nav{
+    display: flex;
+}
+header nav .navbar-header{
+    margin-top: 2vh;
+    margin-right: 34vw;
+    margin-left: 6.5vw;
+}
+header nav .navbar-header a {
+    width: 14rem;
+    height: 50px;
+    background-image: url('./welcome/images/logo.jpg');
+    background-size: cover;
+    display: flex;
+    background-position: 0 -47px;
+    
+
+}
+header nav .navbar-menu ul{
+    display: flex;
+}
+header nav .navbar-menu ul li{
+    margin-top: 4.2vh;
+    margin-right: 5vw;
+    
+}
+header nav .navbar-menu ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #838282;
+    font-weight: 100;
+}
