@@ -10,6 +10,23 @@
   </head>
 
   <body>
+    <header>
+        <header class="top-area">
+            <nav>
+                <div class="navbar-header">
+                    <a [routerLink]="['/welcome']"></a>
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="#information" target="_top">Information</a></li>
+                        <li><a href="#calculator">Calculator</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+    </header>
 
     <div class="carousel">
         <div class="wrapper">
@@ -109,7 +126,9 @@
         <hr>
             <div id="calculator" class="line_caption_dark">Calculator</div> 
         <hr/>
-        <section class="calculator">Calculator and its usage description (will be changed later)</section>
+        <section class="calculator">Calculator and its usage description (will be changed later)
+            <button [routerLink]="['/calculator']">test</button>
+        </section>
         
 
 

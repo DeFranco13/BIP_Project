@@ -18,9 +18,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot([
-      {path: " ", component: WelcomeComponent},
-      {path: "**", component: WelcomeComponent},
       {path: "welcome", component: WelcomeComponent},
+      {path: "", redirectTo: "/welcome", pathMatch: 'full'},
       {path: "calculator", component: CalculatorComponent}
     ])
   ],
