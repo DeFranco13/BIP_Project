@@ -1,1 +1,8 @@
-Images rework, global images so not folder in each component
+x Images rework, global images so not folder in each component.
+x Image above About us has to be a different one, something that gives a clue about teamwork and fits the height.
+x Make frontend for calculator, we can make something nice already for the environment, add some nice pics or something.
+x Make calculator with the help of angular tools we can read the json file from the server automatically read the questions.
+x Auth0 integration if we still do this? (need to talk with Jeroen and team).
+x Integration of admin portal within site? (need to talk with Jeroen and team).
+
+-> Add some points and or comments for me
