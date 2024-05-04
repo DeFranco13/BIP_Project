@@ -227,8 +227,6 @@ input:checked + label .description {
         Main
 --------------------------------------*/
 
-/* Color and height is just for testing, change it as u want. */
-
 
 hr {
     height: 0rem;
@@ -386,6 +384,17 @@ hr {
 --------------------------------------*/
 
 @media screen and (min-width: 1450px) {
+
+    header nav .navbar-header{
+        margin-right: 35.8vw;
+    }
+    .information{
+        height: 60vh;
+    }
+    .about {
+        height: 180vh;
+    }
+
     /* This will adjust the height and width for desktop users*/
     .person-photo {
         width: 320px; 
