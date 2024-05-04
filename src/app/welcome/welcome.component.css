@@ -274,12 +274,15 @@ hr {
 }
 
 .text1{
+    margin-top: 2vh;
     text-align: center;
 }
 .text2{
     margin-top: 2vh;
     height: 120vh;
     display: grid;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 .r1d1{
     grid-row: 1;
@@ -289,13 +292,14 @@ hr {
     height: 60vh;
 }
 .r1d2{
+    
     grid-row: 1;
     grid-column: 2;
     height: 60vh;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+    
 }
 .r1d2 p, .r2d1 p{
+    margin-top: 6vh;
     text-align: left;
     padding: 2vw;
 }
@@ -303,8 +307,7 @@ hr {
     grid-row: 2;
     grid-column: 1;
     height: 60vh;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+   
 }
 .r2d2{
     grid-row: 2;
@@ -317,6 +320,29 @@ hr {
 .text3{
     text-align: center;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+  }
+
+.redirect-button {
+    justify-content: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .redirect-button:hover {
+    background-color: #0056b3; 
+  }
 
 .calculator{
     font-size: 18px;
