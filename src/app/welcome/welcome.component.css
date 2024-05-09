@@ -81,7 +81,7 @@ header nav .navbar-menu ul li a {
 }
 
 body {
-    background-color: #eeeeea;
+    background-color: rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -279,11 +279,12 @@ hr {
     text-align: center;
 }
 .text2{
+    border-radius: 1.75rem;
     margin-top: 2vh;
     height: 120vh;
     display: grid;
-    border: 1px solid rgba(0,0,0,0.47);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
 }
 .r1d1{
     grid-row: 1;
@@ -291,7 +292,7 @@ hr {
     background-image: url(./images/carousel2.jpg);
     background-size: 130vh;
     height: 60vh;
-    
+    border-radius: 1.75rem 0 0 0;
 }
 .r1d2{
     
@@ -317,6 +318,7 @@ hr {
     background-image: url(./images/carousel1.jpg);
     background-size: 110vh;
     height: 60vh;
+    border-radius: 0 0 1.75rem 0;
 }
 
 .text3{
@@ -358,15 +360,19 @@ hr {
     height: 20vh;
 }
 
+
 .about-photo {
-    
+    border-radius: 1.75rem;
     margin-left: auto;
     margin-right: auto;
-    height: 50vh;
-    width: 80vw;
-    border: 1px solid rgba(255, 0, 0, 0);
-    background-image: url("./images/Teamwork-2.jpg");
-    background-size: 150vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 60vh;
+    width: 82.5vw;
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
+    background-image: url("./images/Teamwork-3.jpg");
+    background-size: cover;
+    background-position: 8rem -13.4rem;
     
 }
 
