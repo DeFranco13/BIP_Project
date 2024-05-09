@@ -34,7 +34,7 @@ header nav{
 header nav .navbar-header{
     margin-top: 2vh;
     margin-right: 34vw;
-    margin-left: 6.5vw;
+    margin-left: 6vw;
 }
 header nav .navbar-header a {
     width: 14rem;
@@ -53,7 +53,7 @@ header nav .navbar-menu ul{
 }
 header nav .navbar-menu ul li{
     margin-top: 4.2vh;
-    margin-right: 5vw;
+    margin-right: 6.4vw;
     
 }
 header nav .navbar-menu ul li a {
@@ -127,7 +127,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     height: 10vh;
-    width: 35vw;
+    width: 35.3vw;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
@@ -164,8 +164,9 @@ input:checked + label .description {
     border-radius: 50%;
     width: 3.5vw;
     margin: 15px;
-    margin-left: 0.75vw;
-    margin-right: 0.75vw;
+    padding-left: 0.25vw;
+    
+    
 }
 
 
@@ -265,7 +266,7 @@ hr {
 .information{
     font-size: 18px;
     text-align: justify;
-    padding-top: 3rem;
+    padding-top: 0rem;
     height: 200vh;
     background-color: rgb(255, 255, 255);
     padding-left: 10rem;
@@ -281,8 +282,8 @@ hr {
     margin-top: 2vh;
     height: 120vh;
     display: grid;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0,0,0,0.47);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 .r1d1{
     grid-row: 1;
@@ -290,6 +291,7 @@ hr {
     background-image: url(./images/carousel2.jpg);
     background-size: 130vh;
     height: 60vh;
+    
 }
 .r1d2{
     
@@ -345,11 +347,15 @@ hr {
   }
 
 .calculator{
+    
     font-size: 18px;
     text-align: center;
-    padding-top: 3rem;
-    height: 20vh;
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    line-height: 2rem;
     background-color: #fafafa;
+    height: 20vh;
 }
 
 .about-photo {
@@ -358,9 +364,9 @@ hr {
     margin-right: auto;
     height: 50vh;
     width: 80vw;
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0);
     background-image: url("./images/Teamwork-2.jpg");
-    background-size: 170vh;
+    background-size: 150vh;
     
 }
 
