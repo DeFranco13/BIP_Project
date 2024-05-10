@@ -53,7 +53,7 @@ header nav .navbar-menu ul{
 }
 header nav .navbar-menu ul li{
     margin-top: 4.2vh;
-    margin-right: 6vw;
+    margin-right: 6.35vw;
     
 }
 header nav .navbar-menu ul li a {
@@ -127,7 +127,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     height: 10vh;
-    width: 35.3vw;
+    width: 35.1vw;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
@@ -163,10 +163,9 @@ input:checked + label .description {
     background-size: cover;
     border-radius: 50%;
     width: 3.5vw;
-    margin-top: 1vw;
-    margin-left: 0.75vw;
-    margin-right: 0.75vw;
-    margin-bottom: 1vw;
+    margin: 15px;
+    padding-left: 0.25vw;
+    
     
 }
 
