@@ -33,7 +33,7 @@ header nav{
 }
 header nav .navbar-header{
     margin-top: 2vh;
-    margin-right: 34vw;
+    margin-right: 30vw;
     margin-left: 6vw;
 }
 header nav .navbar-header a {
@@ -53,7 +53,7 @@ header nav .navbar-menu ul{
 }
 header nav .navbar-menu ul li{
     margin-top: 4.2vh;
-    margin-right: 6.4vw;
+    margin-right: 6vw;
     
 }
 header nav .navbar-menu ul li a {
@@ -163,9 +163,10 @@ input:checked + label .description {
     background-size: cover;
     border-radius: 50%;
     width: 3.5vw;
-    margin: 15px;
-    padding-left: 0.25vw;
-    
+    margin-top: 1vw;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+    margin-bottom: 1vw;
     
 }
 
@@ -371,7 +372,7 @@ hr {
     padding-right: 10rem;
     line-height: 2rem;
     background-color: #fafafa;
-    height: 18.5vh;
+    height: 25vh;
 }
 
 

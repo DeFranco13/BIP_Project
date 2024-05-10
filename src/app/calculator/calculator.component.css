@@ -122,6 +122,48 @@ button {
     transition: background-color 0.3s ease;
 }
 
+.questions {
+    background-color: antiquewhite;
+    text-align: center;
+}
+.questions label{
+    font-size: 20px;
+}
+
+/* Template for text questions with an input field */
+.questions input {
+    margin-left: 5vw;
+}
+.questions input::placeholder {
+    color: #999;
+}
+.questions input:hover {
+    border-color: #999;
+}
+.questions .text-question{
+    width: 20vw;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div .question1{
     text-align: center;
     margin-top: 1vw;
