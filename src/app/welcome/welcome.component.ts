@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { JsonService } from '../services/serverCall';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -20,4 +22,5 @@ export class WelcomeComponent {
   scrollToAbout(){
     window.scrollTo({top: 2800, behavior: 'smooth'})
   }
+  
 }
