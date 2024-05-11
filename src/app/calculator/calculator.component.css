@@ -137,31 +137,82 @@ button {
 .questions {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
     background-color: #fafafa;
-    text-align: center;
+    text-align: left;
 
     border-radius: 1.75rem;
     box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
 }
-.questions label{
+
+.questions h3{
     font-size: 20px;
+    padding-left: 3rem;
+    padding-top: 2.5rem;
+}
+
+.questions p{
+    color: #676a8171;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 3rem;
+    margin-top: 1vw;
+
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 42.7vw;
+    background-color: #ffffff;
+}
+
+.questions p:hover{
+    border-color: #999;
+}
+
+.questions p:active{
+    border-color: #00ff15;
 }
 
 /* Template for text questions with an input field */
+.questions select {
+    margin-left: 3rem;
+    margin-top: 1vw;
+    width: 44vw;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #676a8171;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.questions select:hover {
+    border-color: #999;
+}
+
+.questions option {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .questions input {
-    margin-left: 1vw;
-    margin-top: 2vw;
+    margin-left: 3rem;
+    margin-top: 1vw;
+    
+    
 }
 .questions input::placeholder {
-    color: #999;
+    color: #676a8171;
+    font-weight: 700;
 }
 .questions input:hover {
     border-color: #999;
 }
 .questions .text-question{
-    width: 20vw;
+    width: 44vw;
     box-sizing: border-box;
     padding: 10px;
     border: 2px solid #ccc;
@@ -170,3 +221,25 @@ button {
     transition: border-color 0.3s;
 }
 
+.questions h4{
+    font-size: 24px;
+    color: #6a6c81;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3rem;
+
+}
+
+/*-------------------------------------
+        Footer
+--------------------------------------*/
+
+.footer{
+    font-size: 16px;
+    color: rgb(168, 168, 168);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
