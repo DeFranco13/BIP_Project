@@ -73,8 +73,11 @@
             <h4>Materials</h4>
 
             <div class = "button-container">
-                <button onclick="StartC()">Submit results</button>
+                <button (click)="SubmitResults()">Submit results</button>
             </div> 
+            <button (click)="StartC()">LOAD JSON</button>
+            <p *ngIf="testArray == null">json is null</p>
+
         </div>
     </body>
     

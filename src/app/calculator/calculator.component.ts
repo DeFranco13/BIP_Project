@@ -15,7 +15,9 @@ export class CalculatorComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
+  SubmitResults(){
+    
+  }
   StartC() {
     this.jsonService.getJsonData().subscribe(data => {
       this.testArray = data;
