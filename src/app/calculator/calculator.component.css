@@ -30,8 +30,8 @@ header nav{
 }
 header nav .navbar-header{
     margin-top: 2vh;
-    margin-right: 34vw;
-    margin-left: 6.5vw;
+    margin-right: 62.5vw;
+    margin-left: 6vw;
 }
 header nav .navbar-header a {
     width: 14rem;
@@ -46,7 +46,7 @@ header nav .navbar-menu ul{
 }
 header nav .navbar-menu ul li{
     margin-top: 4.2vh;
-    margin-right: 5vw;
+    
     
 }
 header nav .navbar-menu ul li a {
@@ -102,7 +102,8 @@ hr {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 10vh; 
+    height: 10vh;
+    margin-top: 2vw; 
   }
 
 button:hover {
@@ -134,8 +135,15 @@ button {
 }
 
 .questions {
-    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: #fafafa;
     text-align: center;
+
+    border-radius: 1.75rem;
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
 }
 .questions label{
     font-size: 20px;
@@ -143,7 +151,8 @@ button {
 
 /* Template for text questions with an input field */
 .questions input {
-    margin-left: 5vw;
+    margin-left: 1vw;
+    margin-top: 2vw;
 }
 .questions input::placeholder {
     color: #999;
@@ -161,44 +170,3 @@ button {
     transition: border-color 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div .question1{
-    text-align: center;
-    margin-top: 1vw;
-}
-
-.question1 label{
-    font-size: 18px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    
-    margin-right: 0.5vw;
-    margin-left: 42vw;
-
-}
-
-.question1 h4{
-    text-align: center;
-    font-size: 20px;
-    color: #504d4d;
-    text-transform: uppercase;
-    font-weight: 100;
-}
-
-input .question1{
-    border-radius: 5px;
-    
-}

@@ -6,9 +6,7 @@
             </div>
             <div class="navbar-menu">
                 <ul>
-                    <li><a [routerLink]="['/welcome']">Home</a></li>
-                    <li><a href="#information">Information</a></li>
-                    
+                    <li><a [routerLink]="['/welcome']">Return to the main page</a></li>
                 </ul>
             </div>
         </nav>
@@ -19,16 +17,17 @@
     <!--Information section-->
     <hr>
         <div id="information" class="line_caption_dark">Calculator</div> 
-    <hr/>
-    <div class = "button-container">
-        <button onclick="StartC()">Start Calculator</button>
-    </div>    
+    <hr/>   
 
     <!--Questions-->
     <body>
         <div class="questions">
             <label>Company name:</label>
             <input type="text" class ="text-question">
+
+            <div class = "button-container">
+                <button onclick="StartC()">Submit results</button>
+            </div> 
         </div>
     </body>
 
