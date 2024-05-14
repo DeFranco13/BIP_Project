@@ -134,6 +134,18 @@ button {
     transition:all 0.5s;
 }
 
+.start-screen-calculator{
+    text-align: center;
+}
+
+
+
+
+/*-------------------------------------
+        Questions
+--------------------------------------*/
+
+
 .questions {
     margin-top: 3rem;
     margin-bottom: 3rem;

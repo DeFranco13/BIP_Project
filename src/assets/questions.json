@@ -1,0 +1,484 @@
+{
+    "Health": {
+        "questions": [
+            {
+                "question": "Promotion of employee wellness and work-life balance?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "What measures are in place to ensure the health and safety of employees?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "Which of the following best describes the organization's approach to employee wellness programs?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Minimal Efforts": 0,
+                    "Moderate Efforts": 2,
+                    "Extensive Efforts": 4,
+                    "Comprehensive Efforts": 6
+                }
+            }
+        ]
+    },
+    "Value": {
+        "questions": [
+            {
+                "question": "To what extent does your company prioritize the use of renewable or recycled materials in its products?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "How effectively does your company minimize waste during the production process?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "To what extent does your company offer products or services that promote durability and longevity?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "How well does your company facilitate the reuse or repurposing of its products at the end of their life cycle?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            }
+        ]
+    },
+    "Society & Culture": {
+        "questions": [
+            {
+                "question": "Does the organization engage with local communities through events, programs, or partnerships?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Agree": 5,
+                    "Disagree": 0
+                }
+            },
+            {
+                "question": "To what extent does the organization contribute to education and awareness on social and cultural issues?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "question": "What measures are in place to respect and preserve cultural heritage within the organization's operations?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": 5
+                }
+            }
+        ]
+    },
+    "Biodiversity": {
+        "questions": [
+            {
+                "question": "Does the company have policies or initiatives in place to protect local ecosystems?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 3,
+                    "Strongly Agree": 4
+                }
+            },
+            {
+                "question": "To what extent does the company minimize its impact on wildlife habitats?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0.1,
+                    "max": 8
+                }
+            },
+            {
+                "question": "Does the company conduct biodiversity assessments or surveys to understand its impact?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 3,
+                    "Strongly Agree": 4
+                }
+            },
+            {
+                "question": "Is the company involved in habitat restoration or conservation projects?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 3,
+                    "Strongly Agree": 4
+                }
+            },
+            {
+                "question": "Are there any measures in place to prevent harm to endangered species?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 3,
+                    "Strongly Agree": 4
+                }
+            },
+            {
+                "question": "Which of the following best describes the company's approach to biodiversity conservation?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "No Efforts": 0,
+                    "Limited Efforts": 2,
+                    "Moderate Efforts": 4,
+                    "Extensive Efforts": 6
+                }
+            }
+        ]
+    },
+    "Water": {
+        "questions": [
+            {
+                "question": "What is your company's annual water consumption (m3)?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 0,
+                    "max": "unlimited"
+                }
+            },
+            {
+                "question": "What percentage of water is wasted?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "Is your company monitoring water consumption and wastage?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly agree": 6
+                }
+            },
+            {
+                "question": "Have your company implemented strategies to minimize water consumption?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "Is your company actively promoting water stewardship in the community?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "Does your company operate a closed water circuit?",
+                "answer_style": "Yes/No"
+            }
+        ]
+    },
+    "Energy": {
+        "questions": [
+            {
+                "question": "What specific renewable energy sources are being used?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Solar panels": 2,
+                    "Wind": 2,
+                    "Hydro": 2
+                }
+            },
+            {
+                "question": "Does your company produce energy to be sold?",
+                "answer_style": "Yes/No"
+            },
+            {
+                "question": "What is the amount of energy consumed in the year (MWh)?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "0 - 25 MWh": 0,
+                    "25 - 50 MWh": 1,
+                    "50 - 100 MWh": 2,
+                    "100+ MWh": 3
+                }
+            },
+            {
+                "question": "What percentage of energy comes from renewable sources?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "Is the energy consumption properly monitored in your company?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "Is the energy consumption properly optimized in your company?",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "What type of vehicles does your company use for transportation of goods?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Electric": 0,
+                    "Diesel": 1,
+                    "Gasoline": 2,
+                    "Hybrid": 3,
+                    "Gas": 4
+                }
+            }
+        ]
+    },
+    "Material's": {
+        "questions": [
+            {
+                "question": "What percentage of virgin material is used?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "What percentage of reused material is used?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "After production, what percentage of waste is reused?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "What percentage of materials are reused after production?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "What percentage of purchases do you make in your country?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "After production, what is the percentage of material to recycle?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "Are you using any of these materials?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Copper": 0,
+                    "Iron": 1,
+                    "Wood": 2,
+                    "...": 3
+                }
+            },
+            {
+                "question": "Our company takes all possible measures to ensure that the materials used in production are later recycled and composted.",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "Industrial waste is sent for treatment?",
+                "answer_style": "Yes/No"
+            },
+            {
+                "question": "Your products are 100% recyclable after the end of their life.",
+                "answer_style": "Agree/Disagree",
+                "possible_answers": {
+                    "Strongly Disagree": 0,
+                    "Disagree": 1,
+                    "Neutral": 2,
+                    "Agree": 4,
+                    "Strongly Agree": 6
+                }
+            },
+            {
+                "question": "Reuse production waste for incorporation into a new product.",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "Reuse packaging supplied with raw materials?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            },
+            {
+                "question": "Performs waste separation? What products are being separated, percentage of all separated products?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "min": 1,
+                    "max": 100
+                }
+            }
+        ]
+    },
+    "Company": {
+        "questions": [
+            {
+                "question": "Company name"
+            },
+            {
+                "question": "Country"
+            },
+            {
+                "question": "Total revenue for the last financial year",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "100 K - 499 K": 0,
+                    "500 K - 999 K": 1,
+                    "1 M - 2.9 M": 2,
+                    "3 M - 4.9 M": 3,
+                    "+ 5 M": 4
+                }
+            },
+            {
+                "question": "Total number of employees",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "01-14": 0,
+                    "15-29": 1,
+                    "30-49": 2,
+                    "50-99": 3,
+                    "+ 100": 4
+                }
+            },
+            {
+                "question": "Sector of Activity"
+            },
+            {
+                "question": "Are you exporting to other countries?",
+                "answer_style": "Yes/No"
+            },
+            {
+                "question": "What is the distance of your exports?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "1000-1500km": 0,
+                    "1600-1900km": 1,
+                    "2000-2500km": 2,
+                    "2600-3000km": 3,
+                    "+ 3001km": 4
+                }
+            },
+            {
+                "question": "How do you export your products?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Plane": 0,
+                    "Truck": 1,
+                    "Boats": 2,
+                    "Trains": 3
+                }
+            },
+            {
+                "question": "Is your import from other countries?",
+                "answer_style": "Yes/No"
+            },
+            {
+                "question": "What is the distance of your imports?",
+                "answer_style": "Scale",
+                "possible_answers": {
+                    "1000-1500km": 0,
+                    "1600-1900km": 1,
+                    "2000-2500km": 2,
+                    "2600-3000km": 3,
+                    "+ 3001km": 4
+                }
+            },
+            {
+                "question": "How do you import your products?",
+                "answer_style": "Multiple Choice",
+                "possible_answers": {
+                    "Plane": 0,
+                    "Truck": 1,
+                    "Boats": 2,
+                    "Trains": 3
+                }
+            }
+        ]
+    }
+}
