@@ -399,7 +399,8 @@
     "Company": {
         "questions": [
             {
-                "question": "Company name"
+                "question": "Company name",
+                "answer_style": "Custom"
             },
             {
                 "question": "Country"
