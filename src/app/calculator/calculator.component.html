@@ -19,32 +19,32 @@
         <div id="information" class="line_caption_dark">Calculator</div> 
     <hr/>   
 
-    <!--Just for testing-->
-    <button (click)="LoadJsonServer()">LOAD JSON</button>
-    <p *ngIf="testArrayServer == null">json is null</p>
-
     <!--Information about what the calculator does and the rules!-->
     <body>
         <div *ngIf="boolCalculator == false" class="start-screen-calculator">
             <p>This calculator .... </p>
             <p>By using this ....</p>
             <p>Please press button to start!</p>
-            <button (click)="StartCalculator()">START</button>
         </div>
 
 
 
         <!--Questions-->
-        <div *ngIf="JsonArray">
+        <div *ngIf="boolCalculator == true && JsonArray" class="questions">
             <div *ngFor="let key of getObjectKeys(JsonArray)">
                 <!--This checks the current key like health etc this is important for the question pages-->
-              <div>{{ key }}</div>
-                <!--This is the body of the key-->
-              <div *ngIf="JsonArray[key]">{{ JsonArray[key] | json }}</div>
-            </div>
-          </div>
+                <div *ngIf="key == getCurrentPillar()">
+                    <h1>{{ key }}</h1>
+                    <div *ngFor="let question of JsonArray[key]?.questions">
+                        <div>{{question.question}}</div>
+                    </div>
+                    <button *ngIf="getCurrentKey() < 6" (click)="addCurrentKey()">Next</button>
+                    <button *ngIf="getCurrentKey() >= 6">Finish</button>
+                </div>
+            </div>  
+        </div>
 
-        <div *ngIf="boolCalculator == true" class="questions">
+        <div *ngIf="boolCalculator == false" class="questions">
             <h4>Company</h4>
 
             <h3>Company name:</h3>
@@ -93,10 +93,7 @@
             <h3>How do you import your products:</h3>
             <input type="text" class ="text-question" placeholder="Enter here">
 
-            <h4>Materials</h4>
-            <div class = "button-container">
-                <button (click)="SubmitResults()">Submit results</button>
-            </div> 
+            <button (click)="StartCalculator()">START</button>
         </div>
     </body>
     
