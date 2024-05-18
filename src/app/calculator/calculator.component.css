@@ -100,7 +100,7 @@ hr {
 
 .button-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center; 
     height: 10vh;
     margin-top: 2vw; 
@@ -146,7 +146,7 @@ button {
 --------------------------------------*/
 
 
-.questions {
+.key1 {
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 30rem;
@@ -158,13 +158,7 @@ button {
     box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
 }
 
-.questions h3{
-    font-size: 20px;
-    padding-left: 3rem;
-    padding-top: 2.5rem;
-}
-
-.questions p{
+.key1 p{
     color: #676a8171;
     font-weight: 700;
     font-size: 16px;
@@ -178,16 +172,16 @@ button {
     background-color: #ffffff;
 }
 
-.questions p:hover{
+.key1 p:hover{
     border-color: #999;
 }
 
-.questions p:active{
+.key1 p:active{
     border-color: #00ff15;
 }
 
 /* Template for text questions with an input field */
-.questions select {
+.key1 select {
     margin-left: 3rem;
     margin-top: 1vw;
     width: 44vw;
@@ -199,31 +193,31 @@ button {
     font-size: 16px;
 }
 
-.questions select:hover {
+.key1 select:hover {
     border-color: #999;
 }
 
-.questions option {
+.key1 option {
     font-weight: 700;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
 
-.questions input {
+.key1 input {
     margin-left: 3rem;
     margin-top: 1vw;
     
     
 }
-.questions input::placeholder {
+.key1 input::placeholder {
     color: #676a8171;
     font-weight: 700;
 }
-.questions input:hover {
+.key1 input:hover {
     border-color: #999;
 }
-.questions .text-question{
+.key1 .text-question{
     width: 44vw;
     box-sizing: border-box;
     padding: 10px;
@@ -233,7 +227,7 @@ button {
     transition: border-color 0.3s;
 }
 
-.questions h4{
+.key1 h1{
     font-size: 24px;
     color: #6a6c81;
     font-weight: 600;
@@ -241,6 +235,57 @@ button {
     padding-top: 3rem;
 
 }
+
+
+.key1 div{
+    
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #676a81;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10vh;
+    margin-top: 2vw; 
+}
+
+.start-screen-calculator p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #676a81;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2.5rem;
+}
+
+.start-screen-calculator {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    background-color: #fafafa;
+    text-align: left;
+
+    border-radius: 1.75rem;
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
+    
+}
+
+.start-screen-calculator h1{
+    font-size: 24px;
+    color: #6a6c81;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3rem;
+
+}
+
 
 /*-------------------------------------
         Footer
