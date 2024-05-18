@@ -37,6 +37,7 @@
                     <h1>{{ key }}</h1>
                     <div *ngFor="let question of JsonArray[key]?.questions">
                         <div>{{question.question}}</div>
+                        <div>{{question.answer_style}}</div>
                     </div>
                     <button *ngIf="getCurrentKey() < 6" (click)="addCurrentKey()">Next</button>
                     <button *ngIf="getCurrentKey() >= 6">Finish</button>
