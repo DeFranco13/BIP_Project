@@ -9,6 +9,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
+  pushAnswers = false
+  questionAnswer : any = [];
+  questionNumber = 0;
   boolCalculator = false;
   boolResults = false;
   JsonArray: any;
@@ -26,7 +29,10 @@ export class CalculatorComponent {
   startResults(){
     this.boolResults = true
   }
-
+  initiateQuestionNumber(answer: any){
+    this.questionAnswer.push(answer)
+    this.questionNumber += 1
+  }
   StartCalculator(){
     this.boolCalculator = true
     this.LoadJson()
@@ -38,7 +44,9 @@ export class CalculatorComponent {
     return this.keyArray[this.currentKey]
   }
   addCurrentKey(){
+    this.pushAnswers = true
     this.currentKey += 1
+
   }
   getCurrentKey(){
     return this.currentKey
@@ -47,7 +55,6 @@ export class CalculatorComponent {
     this.JsonArray = this.jsonService.getJsonLocal()
     console.log(this.jsonService)
   }
-
   getObjectKeys(obj: any): string[] {
     return Object.keys(obj);
   }
