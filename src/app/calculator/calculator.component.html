@@ -42,7 +42,7 @@
                     <h1>{{ key }}</h1>
                     <div *ngFor="let question of JsonArray[key]?.questions">
                         <div>{{question.question}}</div>
-                        <div>{{question.answer_style}}</div>
+                        <input *ngIF="question.answer_style == Custom" type="text">
 
                         
                     </div>

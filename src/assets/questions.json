@@ -403,7 +403,8 @@
                 "answer_style": "Custom"
             },
             {
-                "question": "Country"
+                "question": "Country",
+                "answer_style": "Custom"
             },
             {
                 "question": "Total revenue for the last financial year",
