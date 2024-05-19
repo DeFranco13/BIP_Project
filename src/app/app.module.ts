@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RouterLink, RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: "welcome", component: WelcomeComponent},
       {path: "", component: WelcomeComponent},
-      {path: "calculator", component: CalculatorComponent}
+      {path: "calculator", component: CalculatorComponent},
+      {path: "login", component: LoginComponent}
     ])
   ],
   providers: [],
