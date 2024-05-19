@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RouterLink, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     RouterModule,
