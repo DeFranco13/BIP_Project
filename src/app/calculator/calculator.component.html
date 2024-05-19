@@ -41,10 +41,14 @@
                 <div *ngIf="key == getCurrentPillar()" class="key1">
                     <h1>{{ key }}</h1>
                     <div *ngFor="let question of JsonArray[key]?.questions">
-                        <div>{{question.question}}</div>
-                        <input *ngIF="question.answer_style == Custom" type="text">
-
                         
+                        <div>{{question.question}}</div>
+                        <div *ngIf="question.answer_style == 'Scale' ">Answer style is Scale</div>
+                        <div *ngIf="question.answer_style == 'Multipe Choice' ">Answer style is Multipe Choice</div>
+                        <div *ngIf="question.answer_style == 'Agree/Disagree' ">Answer style is Agree / Disagree</div>
+                        <div *ngIf="question.answer_style == 'Yes/No' ">Answer style is Yes / No</div>
+                        <div *ngIf="question.answer_style == 'Custom' ">Answer style is Custom</div>
+
                     </div>
                     <div class = 'button-container1'>
                         <button *ngIf="getCurrentKey() < 7" (click)="addCurrentKey()">Next</button>
