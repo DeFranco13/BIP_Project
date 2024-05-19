@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { JsonService } from '../services/serverCall';
 import { HttpClient } from '@angular/common/http';
+import { Login } from '../services/loginProvider';
 
 
 @Component({
@@ -9,6 +10,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
+
+  loginState = false
+  
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

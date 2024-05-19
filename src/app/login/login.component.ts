@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Login } from '../services/loginProvider';
 
 @Component({
   selector: 'app-login',
@@ -7,12 +8,21 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
  login = true
+ credsTrue = false
+ retryLogin = false
  username: any;
  password: any;
+ 
+ 
 
  submitLogin(username: any, password: any){
-  this.login = false
   console.log(this.username, this.password)
+  if (this.username == 'user' && this.password == 'uiopuiop'){
+    this.login = false
+    this.credsTrue = true
+  }else {
+    this.retryLogin = true
+  }
  }
  
 }
