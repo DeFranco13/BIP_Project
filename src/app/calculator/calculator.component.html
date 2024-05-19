@@ -42,7 +42,7 @@
                     <h1>{{ key }}</h1>
                     <div *ngFor="let question of JsonArray[key]?.questions">
 
-                        <div>{{question.question}}</div>
+                        <div class="questions-layout">{{question.question}}</div>
 
                         <div *ngIf="question.answer_style == 'Scale' ">
                             Answer style is Scale

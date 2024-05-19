@@ -173,7 +173,9 @@ button {
     width: 42.7vw;
     background-color: #ffffff;
 }
-
+.key1 .questions-layout{
+    border-top: 1px solid black;
+}
 .key1 p:hover{
     border-color: #999;
 }
