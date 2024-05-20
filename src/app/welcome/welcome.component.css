@@ -1,3 +1,101 @@
+/*
+    START OF DOCUMENTATION
+    WRITTEN BY FRANSEN JORDI
+
+    CSS FOR WELCOME COMPONENT 
+
+    1.      BODY
+    1.1     html setup
+    1.2     body setup
+
+    2.      HEADER
+    2.1     header setup
+    2.2     header display
+    2.3     navbar section
+    2.4     logo section
+    2.5     logo
+    2.6     logo pointer
+    2.7     nav menu list
+    2.8     nav menu elements
+    2.9     nav menu objects
+
+    3.      CAROUSEL
+    3.1     carousel section
+    3.2     wrapper section
+    3.3     container section
+    3.4     card layout 
+    3.5     card position
+    3.6     cards transition
+    3.7     card description position
+    3.8     card description title
+    3.9     card selector
+    3.10    current card setup
+    3.11    current card transition
+    3.12    card icon position
+    3.13    card icon
+    3.14    card background
+
+    4.      MAIN
+    4.1     section devider
+    4.2     section layout - light
+    4.3     section layout - dark
+    4.4     button container
+    4.5     button layout
+    4.6     button hover
+
+    5.      INFORMATION
+    5.1     information section
+    5.2     text 1 - section
+    5.3     section box
+    5.4     figure 1 in section
+    5.5     text 1 in section
+    5.6     text description in section
+    5.7     text 2 in section
+    5.8     figure 2 in section
+    5.9     text 2 - section
+
+    6.      CALCULATOR
+    6.1     calculator section
+
+    7.      ABOUT US
+    7.1     about section
+    7.2     about photo section
+    7.3     person display
+    7.4     person layout
+    7.5     person position
+    7.6     person photo
+    7.7     person title
+    7.8     person description
+    7.9     person photo img set
+
+    8.      FOOTER
+    8.1     footer section
+
+    9.      MEDIA QUERIES
+    9.1     screen adjustment for 1450+ px
+    9.2     navbar header
+    9.3     information section
+    9.4     about section
+    9.5     person section
+    9.6     carousel icon
+
+*/
+
+
+/*-------------------------------------
+
+        1. BODY
+
+--------------------------------------*/
+
+
+/* 1.1 html setup */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* 1.2 body setup */
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size:16px;
@@ -8,14 +106,30 @@ body{
 	overflow-x:hidden;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
 
 /*-------------------------------------
-        Header
+
+        2. HEADER
+
 --------------------------------------*/
 
+
+/* 2.1 header setup */
+header{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(255, 255, 255);
+}
+
+
+/* 2.2 header display */
+header nav{
+    display: flex;
+}
+
+
+/* 2.3 navbar section */
 .top-area{
     position: fixed;
     z-index: 9999;
@@ -23,19 +137,16 @@ html{
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
-header{
-    height: 10vh;
-    background-color: rgb(255, 255, 255);
-    border: 0.1px solid rgb(255, 255, 255);
-}
-header nav{
-    display: flex;
-}
+
+/* 2.4 logo section */
 header nav .navbar-header{
     margin-top: 2vh;
     margin-right: 30vw;
     margin-left: 6vw;
 }
+
+
+/* 2.5 logo */
 header nav .navbar-header a {
     width: 14rem;
     height: 50px;
@@ -45,17 +156,28 @@ header nav .navbar-header a {
     background-position: 0 -47px;
 }
 
+
+/* 2.6 logo pointer */
 header nav .navbar-header a:hover, header nav .navbar-menu ul li a{
     cursor: pointer;
 }
+
+
+/* 2.7 nav menu list */
 header nav .navbar-menu ul{
     display: flex;
 }
+
+
+/* 2.8 nav menu list elements */
 header nav .navbar-menu ul li{
     margin-top: 4.2vh;
     margin-right: 6.35vw;
     
 }
+
+
+/* 2.9 nav menu objects */
 header nav .navbar-menu ul li a {
     font-size: 16px;
     text-transform: uppercase;
@@ -65,13 +187,16 @@ header nav .navbar-menu ul li a {
 }
 
 /*-------------------------------------
-        Carousel
+
+        3. CAROUSEL
+
 --------------------------------------*/
 
+
+/* 3.1 carousel section */
 .carousel{
     padding-top: 10vh;
     height: 80vh;
-    
     background-image: url('./images/carousel3.jpg');
     background-size: 100vw;
     background-position: 0 -50px;
@@ -80,10 +205,8 @@ header nav .navbar-menu ul li a {
    
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
 
+/* 3.2 wrapper section */
 .wrapper {
     width: 100%;
     height: 75vh;
@@ -92,6 +215,8 @@ body {
     justify-content: center;
 }
 
+
+/* 3.3 container section */
 .container {
     height: 50vh;
     display: flex;
@@ -99,6 +224,8 @@ body {
     justify-content: start;
 }
 
+
+/* 3.4 cards layout */
 .card {
     width: 5vw;
     border-radius: .75rem;
@@ -113,6 +240,8 @@ body {
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
+
+/* 3.5 cards position */
 .card > .row {
     color: white;
     display: flex;
@@ -121,6 +250,7 @@ body {
 }
 
 
+/* 3.6 cards transition */
 .card > .row > .description {
     display: flex;
     justify-content: center;
@@ -134,42 +264,51 @@ body {
     transition: all .3s ease;
 }
 
+
+/* 3.7 card description position */
 .description p {
     color: #ffffffce;
     padding-top: 0.5vh;
 }
 
+
+/* 3.8 card description title */
 .description h4 {
     text-transform: uppercase;
     color: #e6e6e6;
     font-weight: 600;
 }
 
+
+/* 3.9 card selector */
 input {
     display: none;
 }
 
+
+/* 3.10 current card setup */
 input:checked + label {
     width: 40vw;
 }
 
+
+/* 3.11 currect card transition */
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
 
+/* 3.12 card icon's position */
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7 {
     background-size: cover;
     border-radius: 50%;
     width: 3.5vw;
     margin: 15px;
-    padding-left: 0.25vw;
-    
-    
+    padding-left: 0.25vw;   
 }
 
-
+/* 3.13 card icon */
 .icon1 {
     background-image: url(./images/materialslogo1.jpg);
 }
@@ -198,6 +337,8 @@ input:checked + label .description {
     background-image: url(./images/valuelogo1.jpg);
 }
 
+
+/* 3.14 card background */
 .card[for="c1"] {
     background-image: url('./images/materials.jpg');
 }
@@ -224,10 +365,13 @@ input:checked + label .description {
 
 
 /*-------------------------------------
-        Main
+
+        4. MAIN
+
 --------------------------------------*/
 
 
+/* 4.1 section devider */
 hr {
     height: 0rem;
     border: 0rem;
@@ -238,6 +382,7 @@ hr {
 }
 
 
+/* 4.2 section layout - light */
 .line_caption{
     color: #504d4d;
     background-color:  #ffffff;
@@ -249,6 +394,8 @@ hr {
     text-align: center;
 }
 
+
+/* 4.3 section layout - dark */
 .line_caption_dark{
     color: #504d4d;
     background-color: #fafafa;
@@ -259,82 +406,18 @@ hr {
     padding-bottom: 3rem;
     text-align: center;
 }
-/*-------------------------------------
-        Information
---------------------------------------*/
 
-.information{
-    font-size: 18px;
-    text-align: justify;
-    padding-top: 0rem;
-    height: 200vh;
-    background-color: rgb(255, 255, 255);
-    padding-left: 10rem;
-    padding-right: 10rem;
-    line-height: 2rem;
-    
-}
 
-.text1{
-    margin-top: 4vh;
-    text-align: center;
-}
-.text2{
-    border-radius: 1.75rem;
-    margin-top: 4vh;
-    height: 120vh;
-    display: grid;
-    
-    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
-}
-.r1d1{
-    grid-row: 1;
-    grid-column: 1;
-    background-image: url(./images/carousel2.jpg);
-    background-size: 130vh;
-    height: 60vh;
-    border-radius: 1.75rem 0 0 0;
-}
-.r1d2{
-    
-    grid-row: 1;
-    grid-column: 2;
-    height: 60vh;
-    
-}
-.r1d2 p, .r2d1 p{
-    margin-top: 6vh;
-    text-align: left;
-    padding: 2vw;
-}
-.r2d1{
-    grid-row: 2;
-    grid-column: 1;
-    height: 60vh;
-   
-}
-.r2d2{
-    grid-row: 2;
-    grid-column: 2;
-    background-image: url(./images/carousel1.jpg);
-    background-size: 110vh;
-    height: 60vh;
-    border-radius: 0 0 1.75rem 0;
-    background-position: -7rem 0rem;
-}
-
-.text3{
-    text-align: center;
-}
-
+/* 4.4 button container */
 .button-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 10vh; 
-  }
+}
 
-  
+
+/* 4.5 button layout */
 .redirect-button {
     line-height: 1.5rem;
     height: 3.5rem;
@@ -343,7 +426,6 @@ hr {
     justify-content:center;
     align-items:center;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
 	font-size:16px;
     text-transform: uppercase;
     text-decoration: none;
@@ -358,13 +440,112 @@ hr {
     transition:all 0.5s;
 }
        
+
+/*  4.6 button hover */
 .redirect-button:hover{
     background-color:hsl(118, 79%, 35%);
     color:#fff;
 }
 
-.calculator{
+/*-------------------------------------
+
+        5. INFORMATION
+
+--------------------------------------*/
+
+
+/* 5.1 information section */
+.information{
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 0rem;
+    height: 200vh;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    line-height: 2rem;
     
+}
+
+/* 5.2 text - 1 section */
+.text1{
+    margin-top: 4vh;
+    text-align: center;
+}
+
+
+/* 5.3 section box */
+.text2{
+    border-radius: 1.75rem;
+    margin-top: 4vh;
+    height: 120vh;
+    display: grid;
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
+}
+
+
+/* 5.4 figure 1 in section */
+.r1d1{
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(./images/carousel2.jpg);
+    background-size: 130vh;
+    height: 60vh;
+    border-radius: 1.75rem 0 0 0;
+}
+
+
+/* 5.5 text 1 in section */
+.r1d2{
+    
+    grid-row: 1;
+    grid-column: 2;
+    height: 60vh;
+}
+
+
+/* 5.6 text description in section */
+.r1d2 p, .r2d1 p{
+    margin-top: 6vh;
+    text-align: left;
+    padding: 2vw;
+}
+
+
+/* 5.7 text 2 in section */
+.r2d1{
+    grid-row: 2;
+    grid-column: 1;
+    height: 60vh;
+}
+
+
+/* 5.7 figure 2 in section */
+.r2d2{
+    grid-row: 2;
+    grid-column: 2;
+    background-image: url(./images/carousel1.jpg);
+    background-size: 110vh;
+    height: 60vh;
+    border-radius: 0 0 1.75rem 0;
+    background-position: -7rem 0rem;
+}
+
+
+/* 5.8 text - 2 section */
+.text3{
+    text-align: center;
+}
+
+/*-------------------------------------
+
+        6. CALCULATOR
+
+--------------------------------------*/
+
+
+/* 6.1 calculator section */
+.calculator{
     font-size: 18px;
     text-align: center;
     padding-top: 2rem;
@@ -376,6 +557,27 @@ hr {
 }
 
 
+/*-------------------------------------
+
+        7. ABOUT US
+
+--------------------------------------*/
+
+
+/* 7.1 about section*/
+.about{
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 3rem;
+    height: 192vh;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    line-height: 2rem;
+}
+
+
+/* 7.2 about photo section */
 .about-photo {
     border-radius: 1.75rem;
     margin-left: auto;
@@ -388,35 +590,31 @@ hr {
     background-image: url("./images/Teamwork-3.png");
     background-size: cover;
     background-position: 8rem -12.2rem;
-    
 }
 
-.about{
-    font-size: 18px;
-    text-align: justify;
-    padding-top: 3rem;
-    height: 192vh;
-    background-color: rgb(255, 255, 255);
-    padding-left: 10rem;
-    padding-right: 10rem;
-    line-height: 2rem;
-}
+/* 7.3 person display */
 .person-display {
     margin-top: 3rem;
 }
+
+/* 7.4 person layout */
 .persons {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
+
+/* 7.5 person positions */
 .personA, .personB, .personC, .personD, .personE, .personF, .personG {
     background-size: cover;
     width: 25vw;
     height: 50vh;
-    
     margin-top: 10px;
 }
+
+
+/* 7.6 person photo */
 .person-photo {
     background-color: #504d4d;
     background-size: cover;
@@ -426,9 +624,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1vh;
-    
 }
 
+
+/* 7.7 person title*/
 .person-description h4{
     font-size: 20px;
     padding-top: 1rem;
@@ -436,11 +635,14 @@ hr {
     font-weight: 600;
 }
 
+
+/* 7.8 person description */
 .person-description p {
     font-size: 17.5px;
     text-align: center;
 }
 
+/* 7.9 person photo img set*/
 .personA > .person-photo {
     background-image: url('./images/Max.jpg');
     background-position: -30px 0;
@@ -475,9 +677,13 @@ hr {
 
 
 /*-------------------------------------
-        Footer
+
+        8. FOOTER
+
 --------------------------------------*/
 
+
+/* 8.1 footer section */
 .footer{
     font-size: 16px;
     color: rgb(168, 168, 168);
@@ -485,34 +691,45 @@ hr {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: rgb(255, 255, 255);
-    
 }
 
 
 /*-------------------------------------
-        Media queries
+
+        9. MEDIA QUERIES
+
 --------------------------------------*/
 
+/* 9.1 screen adjustments for 1450+ px*/
 @media screen and (min-width: 1450px) {
 
+
+    /* 9.2 navbar logo */
     header nav .navbar-header{
         margin-right: 35.8vw;
     }
+
+
+    /* 9.3 information section */
     .information{
         height: 180vh;
     }
+
+
+    /* 9.4 about section*/
     .about {
         height: 180vh;
     }
 
-    /* This will adjust the height and width for desktop users*/
+    
+    /* 9.5 person section */
     .person-photo {
         width: 320px; 
         height: 320px; 
     }
 
 
-    /* This adjusts the icon*/
+    /* 9.6 carousel icon */
     .icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7 {
         background-size: cover;
         border-radius: 50%;
