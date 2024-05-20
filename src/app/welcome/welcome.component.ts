@@ -11,9 +11,11 @@ import { Login } from '../services/loginProvider';
 })
 export class WelcomeComponent {
 
+  // Login state for showing Login or Logged in in navbar
   loginState = false
   
 
+  // This allows the website to scroll smooth to the section
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -26,5 +28,4 @@ export class WelcomeComponent {
   scrollToAbout(){
     window.scrollTo({top: 2800, behavior: 'smooth'})
   }
-  
 }
