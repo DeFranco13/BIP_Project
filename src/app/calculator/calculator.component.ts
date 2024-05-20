@@ -46,7 +46,9 @@ export class CalculatorComponent {
   addCurrentKey(){
     this.pushAnswers = true
     this.currentKey += 1
-
+  }
+  removeCurrentKey(){
+    this.currentKey -= 1
   }
   getCurrentKey(){
     return this.currentKey
