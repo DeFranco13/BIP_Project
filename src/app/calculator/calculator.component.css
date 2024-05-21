@@ -264,6 +264,10 @@ button {
     margin-top: 2vw; 
 }
 
+.blank{
+    display: flex;
+}
+
 .start-screen-calculator p{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;

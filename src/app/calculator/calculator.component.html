@@ -69,6 +69,7 @@
 
                     <div class = 'button-container1'>
                         <button *ngIf="getCurrentKey() > 0" (click)="removeCurrentKey()" >Previous</button>
+                        <div *ngIf="getCurrentKey() > 0" class="blank"></div>
                         <button *ngIf="getCurrentKey() < 7" (click)="addCurrentKey()">Next</button>
                         <button *ngIf="getCurrentKey() >= 7">Finish</button>
                     </div>
