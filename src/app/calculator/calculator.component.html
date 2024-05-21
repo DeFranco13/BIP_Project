@@ -52,18 +52,31 @@
                             Answer style is Multipe Choice
                             <div *ngIf="this.pushAnswers == true">{{initiateQuestionNumber("test")}}</div>
                         </div>
+                        <!--This checks type of answer and creates custom answer-->
+                        <div *ngIf="question.answer_style == 'Agree/Disagree' " class="radio">
+                            <input type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1">
+                            <label class="Radio_label" for="Radio1">Strongly Disagree</label>
+                    
+                            <input type="radio" value="Disagree" class="Radio_input" id="Radio2">
+                            <label class="Radio_label" for="Radio2">Disagree</label>
+                            
+                            <input type="radio" value="Neutral" class="Radio_input" id="Radio3">
+                            <label class="Radio_label" for="Radio3">Neutral</label>
+                                
+                            <input type="radio" value="Agree" class="Radio_input" id="Radio4">
+                            <label class="Radio_label" for="Radio4">Agree</label>
 
-                        <div *ngIf="question.answer_style == 'Agree/Disagree' ">
-                            Answer style is Agree / Disagree
+                            <input type="radio" value="Strongly Agree" class="Radio_input" id="Radio5">
+                            <label class="Radio_label" for="Radio5">Strongly Agree</label>
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' ">
                             Answer style is Yes / No
                         </div>
+                        <!--This checks type of answer and creates custom answer-->
+                        <input *ngIf="question.answer_style == 'Custom' " type="text" class="Custom" placeholder="Enter your answer here">
 
-                        <div *ngIf="question.answer_style == 'Custom' ">
-                            Answer style is Custom
-                        </div>
+                         
 
                     </div>
 
