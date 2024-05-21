@@ -13,7 +13,9 @@ export class LoginComponent {
  username: any;
  password: any;
  
- 
+ scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+ } 
 
  submitLogin(username: any, password: any){
   console.log(this.username, this.password)
@@ -26,3 +28,4 @@ export class LoginComponent {
  }
  
 }
+

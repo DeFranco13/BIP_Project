@@ -3,6 +3,22 @@
  <head> 
   <meta charset="UTF-8"> 
  </head> 
+
+ <header>
+    <header class="top-area">
+        <nav>
+            <div class="navbar-header">
+                <a (click)="scrollToTop()"></a>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a [routerLink]="['/welcome']">Return to the main page</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+</header>
+
  <body>
     <div *ngIf="this.login == true" class="signin"> 
         <div class="content"> 
@@ -31,6 +47,17 @@
             </div>
         </div>
     </div>
+
+    <!-- Start of footer-->
+    
+    <footer>
+        <hr>
+            <section class="footer">Designed, Developed by Maksym Taran, Jordi Fransen.</section> 
+            
+        <hr/>
+    </footer>
+    
+
 
 
  </body>
