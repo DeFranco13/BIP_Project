@@ -6,7 +6,7 @@
             </div>
             <div class="navbar-menu">
                 <ul>
-                    <li><a [routerLink]="['/welcome']">Home</a></li>
+                    <li><a [routerLink]="['/welcome']">Return to main page</a></li>
                 </ul>
             </div>
         </nav>
@@ -71,7 +71,7 @@
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' ">
-                            Answer style is Yes / No
+                           
                         </div>
                         <!--This checks type of answer and creates custom answer-->
                         <input *ngIf="question.answer_style == 'Custom' " type="text" class="Custom" placeholder="Enter your answer here">

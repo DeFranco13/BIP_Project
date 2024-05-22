@@ -128,7 +128,7 @@ header nav .navbar-header a:hover, header nav .navbar-menu ul li a{
 header nav .navbar-menu ul{
     display: flex;
     gap: 2vw;
-    margin-right: 3vw;
+    margin-right: 9.2vw;
     list-style: none;
 }
 
@@ -308,6 +308,8 @@ button {
 --------------------------------------*/
 
 
+/* Template for text questions where you select yes/no */
+
 
 
 /* Template for text questions where you select few option - not finished */
@@ -359,14 +361,26 @@ button {
 /* Template for text questions agree/disagree/ */
 
 .radio{
+    
     display: inline-flex;
     overflow:hidden;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
-    width: 44vw;
+    width: 45vw;
     margin-top: 2vw;
     justify-content: center;
     padding-bottom: 2vw;
+    background: #e4e4e4;
+    cursor: pointer;
+    
+}
+
+.Radio_label:not(:last-of-type) {
+    border-right: 1px solid  #c5c5c5;
+}
+
+.Radio_label:checked + .Radio_label{
+    background: #c5c5c5;
 }
 
 .Radio_input{
@@ -374,8 +388,11 @@ button {
 }
 
 .Radio_label{
-    padding: 0px 2rem;
-    color: #999;
+    padding: 0px 2.2rem;
+    color: #676a81;
+    cursor: pointer;
+    
+    transition:  background 0.1s;
 }
 
 
