@@ -64,6 +64,7 @@ body{
     max-width:1920px;
     margin:0 auto;
 	overflow-x:hidden;
+    background-image: url(../../assets/images/calc_background.jpg);
 }
 
 
@@ -168,13 +169,13 @@ header nav .navbar-menu ul li a::after{
 
 /* 2.11 a element hover styling */
 header nav .navbar-menu ul li a:hover{
-    color: green;
+    color: #0dd466;
 }
 
 
 /* 2.12 underline hover styling */
 header nav .navbar-menu ul li a:hover::after{
-    background-color: green;
+    background-color: #0dd466;
     transform: scaleX(1); /* Scale to full width on hover */
 }
 
@@ -270,6 +271,7 @@ button {
 
 --------------------------------------*/
 
+/* Calc div screen*/
 .start-screen-calculator{
     text-align: center;
 }
@@ -288,6 +290,7 @@ button {
 --------------------------------------*/
 
 
+/*Pillar screens*/
 .key1 {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -295,7 +298,6 @@ button {
     margin-right: 30rem;
     background-color: #fafafa;
     text-align: left;
-
     border-radius: 1.75rem;
     box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
 }
@@ -308,7 +310,6 @@ button {
     font-size: 16px;
     margin-left: 3rem;
     margin-top: 1vw;
-
     border: 2px solid #ccc;
     padding: 10px;
     border-radius: 5px;

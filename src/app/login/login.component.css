@@ -182,13 +182,13 @@ header nav .navbar-menu ul li a::after{
 
 /* 2.11 a element hover styling */
 header nav .navbar-menu ul li a:hover{
-  color: green;
+  color: #0dd466;
 }
 
 
 /* 2.12 underline hover styling */
 header nav .navbar-menu ul li a:hover::after{
-  background-color: green;
+  background-color: #0dd466;
   transform: scaleX(1); /* Scale to full width on hover */
 }
 
