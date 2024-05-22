@@ -361,7 +361,6 @@ button {
 /* Template for text questions agree/disagree/ */
 
 .radio{
-    
     display: inline-flex;
     overflow:hidden;
     border-radius: 15px;
@@ -379,10 +378,6 @@ button {
     border-right: 1px solid  #c5c5c5;
 }
 
-.Radio_label:checked + .Radio_label{
-    background: #c5c5c5;
-}
-
 .Radio_input{
     display: none;
 }
@@ -391,11 +386,15 @@ button {
     padding: 0px 2.2rem;
     color: #676a81;
     cursor: pointer;
-    
     transition:  background 0.1s;
 }
 
-
+.Radio_label:hover{
+    background-color: red;
+}
+.Radio_input:checked + .Radio_label{
+    background-color: #00ff15;
+}
 
 /*template for the questions for you input custom answer */
 .key1 input {
