@@ -48,29 +48,34 @@
                             Answer style is Scale
                         </div>
 
-                        <div *ngIf="question.answer_style == 'Multipe Choice' ">
+                        <div *ngIf="question.answer_style == 'Multiple Choice' ">
                             Answer style is Multipe Choice
                             <div *ngIf="this.pushAnswers == true">{{initiateQuestionNumber("test")}}</div>
                         </div>
                         <!--This checks type of answer and creates custom answer-->
                         <div *ngIf="question.answer_style == 'Agree/Disagree' " class="radio">
                             <input type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1">
-                            <label class="Radio_label" for="Radio1">Strongly Disagree</label>
+                            <label class="Radio_label" id="agree1" for="Radio1">Strongly Disagree</label>
                     
                             <input type="radio" value="Disagree" class="Radio_input" id="Radio2">
-                            <label class="Radio_label" for="Radio2">Disagree</label>
+                            <label class="Radio_label" id="agree2" for="Radio2">Disagree</label>
                             
                             <input type="radio" value="Neutral" class="Radio_input" id="Radio3">
-                            <label class="Radio_label" for="Radio3">Neutral</label>
+                            <label class="Radio_label" id="agree3" for="Radio3">Neutral</label>
                                 
                             <input type="radio" value="Agree" class="Radio_input" id="Radio4">
-                            <label class="Radio_label" for="Radio4">Agree</label>
+                            <label class="Radio_label" id="agree4" for="Radio4">Agree</label>
 
                             <input type="radio" value="Strongly Agree" class="Radio_input" id="Radio5">
-                            <label class="Radio_label" for="Radio5">Strongly Agree</label>
+                            <label class="Radio_label" id="agree5" for="Radio5">Strongly Agree</label>
                         </div>
 
-                        <div *ngIf="question.answer_style == 'Yes/No' ">
+                        <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
+                            <input type="radio" value="Yes" class="Yesno_input" id="Yesno1">
+                            <label class="Yesno_label" id="yes1" for="Yesno1">Yes</label>
+
+                            <input type="radio" value="No" class="Yesno_input" id="Yesno2">
+                            <label class="Yesno_label" id="yes2" for="Yesno2">No</label>
                            
                         </div>
                         <!--This checks type of answer and creates custom answer-->
