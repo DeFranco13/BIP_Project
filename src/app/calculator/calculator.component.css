@@ -6,7 +6,8 @@
 
 
     1.      BODY
-    1.1     body setup
+    1.1     font import
+    1.2     body setup
 
     2.      HEADER
     2.1     header setup
@@ -49,9 +50,14 @@
 --------------------------------------*/
 
 
-/* 1.1 body setup*/
+/* 1.1 font import */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* 1.2 body setup */
 body{
-	font-family: 'Poppins', sans-serif;
 	font-size:16px;
 	color: #676a81;
 	background: #ffffff;
@@ -194,7 +200,6 @@ hr {
 
 /* 3.2 section layout - light */
 .line_caption{
-    font-family: 'Poppins', sans-serif;
     color: #504d4d;
     background-color:  #ffffff;
     font-weight: 600;
@@ -208,7 +213,6 @@ hr {
 
 /* 3.3 section layout - dark */
 .line_caption_dark{
-    font-family: 'Poppins', sans-serif;
     color: #504d4d;
     background-color: #fafafa;
     font-weight: 600;
@@ -246,7 +250,6 @@ button {
     justify-content:center;
     align-items:center;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
 	font-size:16px;
     text-transform: uppercase;
     text-decoration: none;
@@ -343,7 +346,6 @@ button {
 .key1 option {
     font-weight: 700;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
 }
 /* Template for text questions agree/disagree/ */
 
@@ -414,9 +416,7 @@ button {
 
 
 .key1 div{
-    
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     color: #676a81;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -437,7 +437,6 @@ button {
 
 .start-screen-calculator p{
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     color: #676a81;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -480,5 +479,4 @@ button {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
 }

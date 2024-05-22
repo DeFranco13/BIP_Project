@@ -5,8 +5,9 @@
     CSS FOR WELCOME COMPONENT 
 
     1.      BODY
-    1.1     html setup
-    1.2     body setup
+    1.1     font import
+    1.2     html setup
+    1.3     body setup
 
     2.      HEADER
     2.1     header setup
@@ -91,16 +92,19 @@
 
 --------------------------------------*/
 
+/* 1.1 font import */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+}
 
-
-/* 1.1 html setup */
+/* 1.2 html setup */
 html{
     scroll-behavior: smooth;
 }
 
 
-/* 1.2 body setup */
+/* 1.3 body setup */
 body{
 	font-family: 'Quicksand', sans-serif;
 	font-size:16px;
