@@ -1,16 +1,103 @@
+/*
+  START OF DOCUMENTATION
+  WRITTEN BY FRANSEN JORDI
+
+  CSS FOR WELCOME COMPONENT 
+
+  1.      PROJECT
+  1.1     font import
+  1.2     body setup
+  1.3     section devider
+
+  2.      HEADER  
+  2.1     header setup
+  2.2     header display
+  2.3     navbar section
+  2.4     logo section
+  2.5     logo
+  2.6     logo pointer
+  2.7     nav menu list
+  2.8     nav menu elements
+  2.9     nav menu objects
+
+  3.      SIGNIN
+  3.1     signin setup
+  3.2     signin content setup
+  3.3     signin title
+  3.4     signin cred-box setup
+  3.5     content position
+  3.6     input position
+  3.7     input styling
+  3.8     login & continue box styling
+  3.9     login button styling
+  3.10    wrongcreds title
+
+  4.      Success
+  4.1     succes section
+  4.2     succes content
+  4.3     succes title
+  4.4     continue box
+  4.5     continue object
+
+  5.      Footer
+  5.1     footer section
+
+*/
+
+
+/*-------------------------------------
+
+        1. PROJECT
+
+--------------------------------------*/
+
+/* 1.1 font import */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+/* 1.2 body setup */
 body{
   height: 80vh;
   background-color: rgb(255, 255, 255);
-  font-family: 'Quicksand', sans-serif;
-  
+  font-family: 'Quicksand', sans-serif; 
   background-size: 200vh;
 }
 
+
+/* 1.3 section devider */
+hr {
+  
+  height: 0rem;
+  border: 0rem;
+  border-top: 1px solid #e9e9e9;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  background: rgb(255, 255, 255); 
+}
+
+
 /*-------------------------------------
-        Header
+
+        2. HEADER
+
 --------------------------------------*/
 
+
+/* 2.1 header setup */
+header{
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  border: 0.1px solid rgb(255, 255, 255);
+}
+
+
+/* 2.2 header display */
+header nav{
+  display: flex;
+}
+
+
+/* 2.3 navbar section */
 .top-area{
   position: fixed;
   z-index: 9999;
@@ -18,19 +105,16 @@ body{
   box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
-header{
-  height: 10vh;
-  background-color: rgb(255, 255, 255);
-  border: 0.1px solid rgb(255, 255, 255);
-}
-header nav{
-  display: flex;
-}
+
+/* 2.4 logo section */
 header nav .navbar-header{
   margin-top: 2vh;
   margin-right: 62.5vw;
   margin-left: 6vw;
 }
+
+
+/* 2.5 logo */
 header nav .navbar-header a {
   width: 14rem;
   height: 50px;
@@ -39,14 +123,28 @@ header nav .navbar-header a {
   display: flex;
   background-position: 0 -47px;
 }
+
+
+/* 2.6 logo pointer */
+header nav .navbar-header a:hover, header nav .navbar-menu ul li a{
+  cursor: pointer;
+}
+
+
+/* 2.7 nav menu list */
 header nav .navbar-menu ul{
   display: flex;
+  margin-left: 9vw;
 }
+
+
+/* 2.8 nav menu list elements */
 header nav .navbar-menu ul li{
   margin-top: 4.2vh;
-  
-  
 }
+
+
+/* 2.9 nav menu objects */
 header nav .navbar-menu ul li a {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -57,11 +155,21 @@ header nav .navbar-menu ul li a {
 }
 
 
+/*-------------------------------------
+
+        3. SIGNIN 
+
+--------------------------------------*/
+
+
+/* 3.1 signin setup */
 .signin{
   display: flex;
   justify-content: center;
 }
 
+
+/* 3.2 signin content setup */
 .content{
   height: 45vh;
   width: 25vw;
@@ -73,6 +181,8 @@ header nav .navbar-menu ul li a {
 
 }
 
+
+/* 3.3 signin title */
 .content h2{
   font-size: 40px;
   text-align: center;
@@ -81,13 +191,22 @@ header nav .navbar-menu ul li a {
   text-transform: uppercase;
   color:#504d4d;
 }
+
+
+/* 3.4 signin creds-box setup */
 .content .form{
   width: 100%;
   margin-top: 3vh;
 }
+
+
+/* 3.5 content position */
 .content .form .inputBox{
   padding-top: 2vh;
 }
+
+
+/* 3.6 input position */
 .content .form .inputBox input, .loginBox button, .continueBox a{
   height: 5vh;
   width: 18.2vw;
@@ -95,16 +214,24 @@ header nav .navbar-menu ul li a {
   margin-left: 3vw;
 }
 
+
+/* 3.7 input styling */
 .inputBox input{
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   padding-left: 0.5rem;
 }
+
+
+/* 3.8 login & continue box position */
 .loginBox, .continueBox{
   margin-top: 1vh;
   height: 10vh;
   width: 100%;
 }
+
+
+/* 3.9 login button styling */
 .loginBox button{
   width: 19vw;
   margin-top: 3vh;
@@ -132,21 +259,27 @@ header nav .navbar-menu ul li a {
   color:#fff; 
 }
 
-
-
-
+/* 3.10 wrongcreds title */
 .wrongCreds h3{
   padding-top: 1vh;
   text-align: center;
 }
 
+/*-------------------------------------
+
+        4. SUCCES
+
+--------------------------------------*/
 
 
-
+/* 4.1 success section */
 .success{
   display: flex;
   justify-content: center;
 }
+
+
+/* 4.2 succes content */
 .contentSuccess{
   height: 45vh;
   width: 25vw;
@@ -155,16 +288,24 @@ header nav .navbar-menu ul li a {
   border-radius: 5%;
 }
 
+
+/* 4.3 succes title */
 .contentSuccess h2{
   font-size: 40px;
   text-align: center;
   font-weight: 700;
   margin-top: 6vh;
 }
+
+
+/* 4.4 continue button */
 .continueBox{
   margin-top: 23vh;
   text-align: center;
 }
+
+
+/* 4.5 continue object*/
 .continueBox a{
   background-color: aliceblue;
   text-decoration: none;
@@ -173,14 +314,17 @@ header nav .navbar-menu ul li a {
   padding-right: 5vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
-
 }
 
 
 /*-------------------------------------
-        Footer
+
+        5. FOOTER
+
 --------------------------------------*/
 
+
+/* 5.1 footer section */
 .footer{
   font-size: 16px;
   color: rgb(168, 168, 168);
@@ -189,15 +333,4 @@ header nav .navbar-menu ul li a {
   padding-bottom: 3rem;
   background-color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
-}
-
-
-hr {
-  
-  height: 0rem;
-  border: 0rem;
-  border-top: 1px solid #e9e9e9;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-  background: rgb(255, 255, 255); 
 }
