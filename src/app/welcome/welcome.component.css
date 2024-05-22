@@ -150,7 +150,7 @@ header nav .navbar-header{
 header nav .navbar-header a {
     width: 14rem;
     height: 50px;
-    background-image: url('./images/logo.jpg');
+    background-image: url('../../assets/images/logo.jpg');
     background-size: cover;
     display: flex;
     background-position: 0 -47px;
@@ -197,7 +197,7 @@ header nav .navbar-menu ul li a {
 .carousel{
     padding-top: 10vh;
     height: 80vh;
-    background-image: url('./images/carousel3.jpg');
+    background-image: url('../../assets/images/carousel3.jpg');
     background-size: 100vw;
     background-position: 0 -50px;
     background-repeat: no-repeat;
@@ -312,55 +312,55 @@ input:checked + label .description {
 
 /* 3.13 card icon */
 .icon1 {
-    background-image: url(./images/materialslogo1.jpg);
+    background-image: url(../../assets/images/materialslogo1.jpg);
 }
 
 .icon2 {
-    background-image: url(./images/energylogo1.jpg);
+    background-image: url(../../assets/images/energylogo1.jpg);
 }
 
 .icon3 {
-    background-image: url(./images/waterlogo1.jpg);
+    background-image: url(../../assets/images/waterlogo1.jpg);
 }
 
 .icon4 {
-    background-image: url(./images/biodiversitylogo1.jpg);
+    background-image: url(../../assets/images/biodiversitylogo1.jpg);
 }
 
 .icon5 {
-    background-image: url(./images/societylogo1.jpg);
+    background-image: url(../../assets/images/societylogo1.jpg);
 }
 
 .icon6 {
-    background-image: url(./images/healthlogo1.jpg);
+    background-image: url(../../assets/images/healthlogo1.jpg);
 }
 
 .icon7 {
-    background-image: url(./images/valuelogo1.jpg);
+    background-image: url(../../assets/images/valuelogo1.jpg);
 }
 
 
 /* 3.14 card background */
 .card[for="c1"] {
-    background-image: url('./images/materials.jpg');
+    background-image: url('../../assets/images/materials.jpg');
 }
 .card[for="c2"] {
-    background-image: url('./images/renewable energy.jpg');
+    background-image: url('../../assets/images/renewable energy.jpg');
 }
 .card[for="c3"] {
-    background-image: url('./images/waterstewardship.jpg');
+    background-image: url('../../assets/images/waterstewardship.jpg');
 }
 .card[for="c4"] {
-    background-image: url('./images/biodiversity.jpg');
+    background-image: url('../../assets/images/biodiversity.jpg');
 }
 .card[for="c5"] {
-    background-image: url('./images/society.jpg');
+    background-image: url('../../assets/images/society.jpg');
 }
 .card[for="c6"] {
-    background-image: url('./images/health.jpg');
+    background-image: url('../../assets/images/health.jpg');
 }
 .card[for="c7"] {
-    background-image: url('./images/value.jpg');
+    background-image: url('../../assets/images/value.jpg');
 }
 
 
@@ -490,7 +490,7 @@ hr {
 .r1d1{
     grid-row: 1;
     grid-column: 1;
-    background-image: url(./images/carousel2.jpg);
+    background-image: url("../../assets/images/carousel2.jpg");
     background-size: 130vh;
     height: 60vh;
     border-radius: 1.75rem 0 0 0;
@@ -526,7 +526,7 @@ hr {
 .r2d2{
     grid-row: 2;
     grid-column: 2;
-    background-image: url(./images/carousel1.jpg);
+    background-image: url("../../assets/images/carousel1.jpg");
     background-size: 110vh;
     height: 60vh;
     border-radius: 0 0 1.75rem 0;
@@ -589,7 +589,7 @@ hr {
     height: 60vh;
     width: 82.5vw;
     box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
-    background-image: url("./images/Teamwork-3.png");
+    background-image: url("../../assets/images/Teamwork-3.png");
     background-size: cover;
     background-position: 8rem -12.2rem;
 }
@@ -645,35 +645,27 @@ hr {
 
 /* 7.9 person photo img set*/
 .personA > .person-photo {
-    background-image: url('./images/Max.jpg');
+    background-image: url('../../assets/images/Person-Max.jpg');
     background-position: -30px 0;
-    
 }
-
 .personB > .person-photo {
-    background-image: url('./images/Jordi.jpg');
-    background-position: 0 -90px;
-    
+    background-image: url('../../assets/images/Person-Jordi.jpg');
+    background-position: 0 -90px;   
 }
 .personC > .person-photo {
-    background-image: url('./images/Bartek.jpg');
-    
+    background-image: url('../../assets/images/Person-Bartek.jpg');
 }
 .personD > .person-photo {
-    background-image: url('./images/Pedro.jpg');
-    
+    background-image: url('../../assets/images/Person-Pedro.jpg');
 }
 .personE > .person-photo {
-    background-image: url('./images/Nikita.jpg');
-    
+    background-image: url('../../assets/images/Person-Nikita.jpg');
 }
 .personF > .person-photo {
-    background-image: url('./images/Joao.jpg');
-    
+    background-image: url('../../assets/images/Person-Joao.jpg');
 }
 .personG > .person-photo {
-    background-image: url('./images/Mulabiza.jpg');
-    
+    background-image: url('../../assets/images/Person-Mulabiza.jpg');
 }
 
 

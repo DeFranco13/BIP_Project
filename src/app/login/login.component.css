@@ -118,7 +118,7 @@ header nav .navbar-header{
 header nav .navbar-header a {
   width: 14rem;
   height: 50px;
-  background-image: url('./images/logo.jpg');
+  background-image: url('../../assets/images/logo.jpg');
   background-size: cover;
   display: flex;
   background-position: 0 -47px;
