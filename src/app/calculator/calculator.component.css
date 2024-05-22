@@ -310,7 +310,55 @@ button {
 
 /* Template for text questions where you select yes/no */
 
+.yesno{
+    display: inline-flex;
+    overflow:hidden;
+    width: 45vw;
+    justify-content: center;
+}
 
+.Yesno_label:not(:last-of-type) {
+    border-right: 1px solid  #c5c5c5;
+}
+
+.Yesno_input{
+    display: none;
+}
+
+.Yesno_label{
+    padding: 30px 2.2rem;
+    color: #676a81;
+    cursor: pointer;
+    transition:  background 0.1s;
+    background: #e4e4e4;
+    padding-bottom: 1.6vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+
+
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+    
+    padding-left: 10.175vw;
+    padding-right: 10.175vw;
+    
+}
+
+#yes1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#yes2 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.Yesno_label:hover{
+    background-color: #d8d8d8;
+}
+.Yesno_input:checked + .Yesno_label{
+    background-color: #c0c0c0;
+}
 
 /* Template for text questions where you select few option - not finished */
 
@@ -363,15 +411,8 @@ button {
 .radio{
     display: inline-flex;
     overflow:hidden;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.25);
     width: 45vw;
-    margin-top: 2vw;
     justify-content: center;
-    padding-bottom: 2vw;
-    background: #e4e4e4;
-    cursor: pointer;
-    
 }
 
 .Radio_label:not(:last-of-type) {
@@ -383,18 +424,34 @@ button {
 }
 
 .Radio_label{
-    padding: 0px 2.2rem;
+    padding: 30px 2.2rem;
     color: #676a81;
     cursor: pointer;
     transition:  background 0.1s;
+    background: #e4e4e4;
+    padding-bottom: 1.6vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+#agree1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#agree5 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .Radio_label:hover{
-    background-color: red;
+    background-color: #d8d8d8;
 }
 .Radio_input:checked + .Radio_label{
-    background-color: #00ff15;
+    background-color: #c0c0c0;
 }
+
 
 /*template for the questions for you input custom answer */
 .key1 input {
