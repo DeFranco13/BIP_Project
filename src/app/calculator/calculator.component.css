@@ -206,22 +206,50 @@ button {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+/* Template for text questions agree/disagree/ */
+
+.radio{
+    display: inline-flex;
+    overflow:hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    width: 44vw;
+    margin-top: 2vw;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+.Radio_input{
+    display: none;
+}
+
+.Radio_label{
+    padding: 0px 2rem;
+    color: #999;
+}
+
 
 
 /*template for the questions for you input custom answer */
 .key1 input {
-    margin-left: 3rem;
-    margin-top: 1vw;
-    
-    
+    height: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    width: 43.5vw;
+
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-weight: 700;
+    font-size: 16px;
+
+    padding-left: 0.5rem;
+    font-weight: 700;
 }
 .key1 input::placeholder {
     color: #676a8171;
-    font-weight: 700;
+
 }
-.key1 input:hover {
-    border-color: #999;
-}
+
 .key1 .text-question{
     width: 44vw;
     box-sizing: border-box;
