@@ -1,3 +1,52 @@
+/*
+  START OF DOCUMENTATION
+  WRITTEN BY FRANSEN JORDI
+
+  CSS FOR WELCOME COMPONENT 
+
+
+    1.      BODY
+    1.1     body setup
+
+    2.      HEADER
+    2.1     header setup
+    2.2     header display
+    2.3     navbar section
+    2.4     logo section
+    2.5     logo
+    2.6     logo pointer
+    2.7     nav menu list
+    2.8     nav menu elements
+    2.9     nav menu objects
+
+    3.      MAIN
+    3.1     section devider
+    3.2     section layout - light
+    3.3     section layout - dark
+    3.4     button container
+    3.5     button hover
+    3.6     button
+
+    4.      CALCULATOR
+
+    5.      QUESTIONS
+
+    6.      ANSWERS
+
+    7.      FOOTER
+
+
+*/
+
+
+/*-------------------------------------
+
+        1. BODY
+
+--------------------------------------*/
+
+
+/* 1.1 body setup*/
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size:16px;
@@ -10,9 +59,27 @@ body{
 
 
 /*-------------------------------------
-        Header
+
+        2. HEADER
+
 --------------------------------------*/
 
+
+/* 2.1 header setup */
+header{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(255, 255, 255);
+}
+
+
+/* 2.2 header display */
+header nav{
+    display: flex;
+}
+
+
+/* 2.3 navbar section */
 .top-area{
     position: fixed;
     z-index: 9999;
@@ -20,19 +87,16 @@ body{
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
-header{
-    height: 10vh;
-    background-color: rgb(255, 255, 255);
-    border: 0.1px solid rgb(255, 255, 255);
-}
-header nav{
-    display: flex;
-}
+
+/* 2.4 logo section */
 header nav .navbar-header{
     margin-top: 2vh;
     margin-right: 62.5vw;
     margin-left: 6vw;
 }
+
+
+/* 2.5 logo */
 header nav .navbar-header a {
     width: 14rem;
     height: 50px;
@@ -41,14 +105,27 @@ header nav .navbar-header a {
     display: flex;
     background-position: 0 -47px;
 }
+
+
+/* 2.6 logo pointer */
+header nav .navbar-header a:hover, header nav .navbar-menu ul li a{
+    cursor: pointer;
+}
+
+
+/* 2.7 nav menu list */
 header nav .navbar-menu ul{
     display: flex;
 }
+
+
+/* 2.8 nav menu list elements */
 header nav .navbar-menu ul li{
-    margin-top: 4.2vh;
-    
-    
+    margin-top: 4.2vh; 
 }
+
+
+/* 2.9 nav menu objects */
 header nav .navbar-menu ul li a {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -60,10 +137,13 @@ header nav .navbar-menu ul li a {
 
 
 /*-------------------------------------
-        Main
+
+        3. MAIN
+
 --------------------------------------*/
 
 
+/* 3.1 section devider */
 hr {
     height: 0rem;
     border: 0rem;
@@ -74,6 +154,7 @@ hr {
 }
 
 
+/* 3.2 section layout - light */
 .line_caption{
     font-family: 'Poppins', sans-serif;
     color: #504d4d;
@@ -86,6 +167,8 @@ hr {
     text-align: center;
 }
 
+
+/* 3.3 section layout - dark */
 .line_caption_dark{
     font-family: 'Poppins', sans-serif;
     color: #504d4d;
@@ -98,19 +181,25 @@ hr {
     text-align: center;
 }
 
+
+/* 3.4 button container */
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 10vh;
     margin-top: 2vw; 
-  }
+}
 
+
+/*  3.5 button hover */
 button:hover {
     background-color:hsl(118, 79%, 35%);
     color:#fff; 
-  }
+}
 
+
+/* 3.6 button*/
 button {
     line-height: 1.5rem;
     height: 3.5rem;
@@ -134,15 +223,27 @@ button {
     transition:all 0.5s;
 }
 
+/*-------------------------------------
+
+        4. CALCULATOR
+
+--------------------------------------*/
+
 .start-screen-calculator{
     text-align: center;
 }
 
+/*-------------------------------------
 
+        5. QUESTIONS
+
+--------------------------------------*/
 
 
 /*-------------------------------------
-        Questions
+
+        6. ANSWERS
+
 --------------------------------------*/
 
 
@@ -329,7 +430,9 @@ button {
 
 
 /*-------------------------------------
-        Footer
+
+        7. FOOTER
+
 --------------------------------------*/
 
 .footer{
