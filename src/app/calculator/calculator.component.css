@@ -282,6 +282,24 @@ button {
 
 --------------------------------------*/
 
+/* Pillar box */
+.questions{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Pillar screens*/
+.key1 {
+    width: 50vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #fafafa;
+    text-align: left;
+    border-radius: 1.75rem;
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
+}
+
 
 /*-------------------------------------
 
@@ -290,17 +308,7 @@ button {
 --------------------------------------*/
 
 
-/*Pillar screens*/
-.key1 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
-    background-color: #fafafa;
-    text-align: left;
-    border-radius: 1.75rem;
-    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.8);
-}
+
 
 /* Template for text questions where you select few option - not finished */
 
