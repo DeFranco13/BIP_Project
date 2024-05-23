@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { JsonService } from '../services/serverCall';
 import { HttpClient } from '@angular/common/http';
-import { Login } from '../services/loginProvider';
+import { LoginService } from '../services/loginProvider';
 
 
 @Component({
@@ -14,7 +14,15 @@ export class WelcomeComponent {
   // Login state for showing Login or Logged in in navbar
   loginState = false
   
+  constructor(private loginService: LoginService){}
 
+  ngOnInit(){
+    this.loginState = this.loginService.getLoginState()
+    setInterval( ()=> console.log(this.loginState), 1000 )
+    setInterval( ()=> this.loginState = this.loginService.getLoginState(), 1000 )
+  }
+
+  
   // This allows the website to scroll smooth to the section
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

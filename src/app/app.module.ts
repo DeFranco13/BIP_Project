@@ -8,6 +8,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RouterLink, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { LoginService } from './services/loginProvider';
 
 
 @NgModule({

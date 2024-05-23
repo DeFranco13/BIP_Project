@@ -43,7 +43,7 @@
         <div class="contentSuccess">
             <h2>Login succesfull</h2>
             <div class="continueBox">
-                <a [routerLink]="['..']">Continue</a>
+                <a (click)="changeState()" [routerLink]="['..']">Continue</a>
             </div>
         </div>
     </div>

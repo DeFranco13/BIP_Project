@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Login } from '../services/loginProvider';
+import { LoginService } from '../services/loginProvider';
 
 @Component({
   selector: 'app-login',
@@ -13,6 +13,14 @@ export class LoginComponent {
  username: any;
  password: any;
  
+ loginState = false
+  
+ constructor(private loginService: LoginService){}
+ 
+ changeState(){
+  this.loginService.setLoginState(true)
+}
+
  scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
  } 
