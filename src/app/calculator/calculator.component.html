@@ -50,8 +50,8 @@
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">
                             Answer style is Multipe Choice
-                            <div *ngIf="this.pushAnswers == true">{{initiateQuestionNumber("test")}}</div>
                         </div>
+                        
                         <!--This checks type of answer and creates custom answer-->
                         <div *ngIf="question.answer_style == 'Agree/Disagree' " class="radio">
                             <input type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1" name="radio_1">
@@ -88,6 +88,7 @@
                     <div class = 'button-container1'>
                         <button *ngIf="getCurrentKey() > 0" (click)="removeCurrentKey()" >Previous</button>
                         <div *ngIf="getCurrentKey() > 0" class="blank"></div>
+                        
                         <button *ngIf="getCurrentKey() < 7" (click)="addCurrentKey()">Next</button>
                         <button *ngIf="getCurrentKey() >= 7">Finish</button>
                     </div>

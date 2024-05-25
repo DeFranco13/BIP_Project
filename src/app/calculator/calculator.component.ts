@@ -23,6 +23,11 @@ export class CalculatorComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  pushAnswer(iteration: any,  answer: any){
+    this.questionAnswer[iteration].push(answer)
+  }
+  
   SubmitResults(){
 
   }
@@ -33,30 +38,34 @@ export class CalculatorComponent {
     this.questionAnswer.push(answer)
     this.questionNumber += 1
   }
+
   StartCalculator(){
     this.boolCalculator = true
     this.LoadJson()
-    
-    let button = <HTMLButtonElement> document.getElementById('button1');
-    button.remove()
   }
+
   getCurrentPillar(){
     return this.keyArray[this.currentKey]
   }
+
   addCurrentKey(){
     this.pushAnswers = true
     this.currentKey += 1
   }
+
   removeCurrentKey(){
     this.currentKey -= 1
   }
+
   getCurrentKey(){
     return this.currentKey
   }
+
   LoadJson(){
     this.JsonArray = this.jsonService.getJsonLocal()
     console.log(this.jsonService)
   }
+
   getObjectKeys(obj: any): string[] {
     return Object.keys(obj);
   }
