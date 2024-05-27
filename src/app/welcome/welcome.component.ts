@@ -21,9 +21,8 @@ export class WelcomeComponent {
   ngOnInit(){
     this.getScreenSize()
     this.loginState = this.loginService.getLoginState()
-    setInterval( ()=> console.log(this.loginState), 1000 )
-    setInterval( ()=> this.loginState = this.loginService.getLoginState(), 1000 )
-    setInterval( ()=> console.log(this.screen), 1000)
+    this.loginState = this.loginService.getLoginState()
+
     setInterval( ()=> console.log(window.outerWidth), 1000)
   }
 

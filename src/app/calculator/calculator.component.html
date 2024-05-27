@@ -40,7 +40,7 @@
                 <!--This checks the current key like health etc this is important for the question pages-->
                 <div *ngIf="key == getCurrentPillar()" class="key1">
                     <h1>{{ key }}</h1>
-                    <div *ngFor="let question of JsonArray[key]?.questions">
+                    <div *ngFor="let question of JsonArray[key]?.questions; let i = index">
 
                         <div class="questions-layout">{{question.question}}</div>
 
@@ -71,11 +71,11 @@
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
-                            <input type="radio" value="Yes" class="Yesno_input" id="Yesno1" name="yesno_1">
-                            <label class="Yesno_label" id="yes1" for="Yesno1">Yes</label>
+                            <input (click)="pushAnswer(i, 'yes')" type="radio" value="Yes" class="Yesno_input" id="Yesno1_{{i}}" name="yesno_1_{{i}}">
+                            <label class="Yesno_label" id="yes1_{{i}}" for="Yesno1_{{i}}">Yes</label>
 
-                            <input type="radio" value="No" class="Yesno_input" id="Yesno2" name="yesno_1">
-                            <label class="Yesno_label" id="yes2" for="Yesno2">No</label>
+                            <input (click)="pushAnswer(i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
+                            <label class="Yesno_label" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>
                            
                         </div>
                         <!--This checks type of answer and creates custom answer-->
@@ -88,9 +88,10 @@
                     <div class = 'button-container1'>
                         <button *ngIf="getCurrentKey() > 0" (click)="removeCurrentKey()" >Previous</button>
                         <div *ngIf="getCurrentKey() > 0" class="blank"></div>
-                        
                         <button *ngIf="getCurrentKey() < 7" (click)="addCurrentKey()">Next</button>
                         <button *ngIf="getCurrentKey() >= 7">Finish</button>
+                        
+                        <button (click)="getArray()">load</button>
                     </div>
                 </div>
             </div>  

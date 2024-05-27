@@ -24,8 +24,12 @@ export class CalculatorComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  getArray(){
+    console.log(this.questionAnswer)
+  }
   pushAnswer(iteration: any,  answer: any){
-    this.questionAnswer[iteration].push(answer)
+    this.questionAnswer[iteration]
+    
   }
   
   SubmitResults(){
