@@ -263,7 +263,7 @@ header nav .navbar-menu ul li a:hover::after{
     height: 50vh;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 
