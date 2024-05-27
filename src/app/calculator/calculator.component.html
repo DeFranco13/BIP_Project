@@ -36,7 +36,7 @@
 
         <!--Questions-->
         <div *ngIf="boolCalculator == true && JsonArray" class="questions">
-            <div *ngFor="let key of getObjectKeys(JsonArray)">
+            <div *ngFor="let key of getObjectKeys(JsonArray); let j = index">
                 <!--This checks the current key like health etc this is important for the question pages-->
                 <div *ngIf="key == getCurrentPillar()" class="key1">
                     <h1>{{ key }}</h1>
@@ -71,10 +71,10 @@
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
-                            <input (click)="pushAnswer(i, 'yes')" type="radio" value="Yes" class="Yesno_input" id="Yesno1_{{i}}" name="yesno_1_{{i}}">
+                            <input (click)="pushAnswer(j, i, 'yes')" type="radio" value="Yes" class="Yesno_input" id="Yesno1_{{i}}" name="yesno_1_{{i}}">
                             <label class="Yesno_label" id="yes1_{{i}}" for="Yesno1_{{i}}">Yes</label>
 
-                            <input (click)="pushAnswer(i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
+                            <input (click)="pushAnswer(j, i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
                             <label class="Yesno_label" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>
                            
                         </div>
