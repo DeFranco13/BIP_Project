@@ -18,7 +18,9 @@ export class CalculatorComponent {
   keyArray = ["Company", "Materials", "Energy", "Water", "Biodiversity", "Society & Culture", "Health", "Value"]
   currentKey: number = 0
 
-  constructor(private jsonService: JsonService, private http: HttpClient) {}
+  constructor(private jsonService: JsonService, private http: HttpClient) {
+   
+  }
   
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -57,6 +59,7 @@ export class CalculatorComponent {
 
   getCurrentPillar(){
     return this.keyArray[this.currentKey]
+
   }
 
   addCurrentKey(){
