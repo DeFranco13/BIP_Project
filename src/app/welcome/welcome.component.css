@@ -706,9 +706,6 @@ hr {
 .personF > .person-photo {
     background-image: url('../../assets/images/Person-Joao.jpg');
 }
-.personG > .person-photo {
-    background-image: url('../../assets/images/Person-Mulabiza.jpg');
-}
 
 
 /*-------------------------------------
@@ -753,7 +750,7 @@ hr {
 
     /* 9.4 about section*/
     .about {
-        height: 180vh;
+        height: 130vh;
     }
 
     
