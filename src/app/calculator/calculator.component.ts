@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { JsonService } from '../services/serverCall';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { AnswerService } from '../services/answerService';
 
 
 @Component({
@@ -9,77 +11,92 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-  pushAnswers = false
   questionAnswer : any = [];
   questionNumber = 0;
   boolCalculator = false;
-  boolResults = false;
   JsonArray: any;
   keyArray = ["Company", "Materials", "Energy", "Water", "Biodiversity", "Society & Culture", "Health", "Value"]
   currentKey: number = 0
 
-  constructor(private jsonService: JsonService, private http: HttpClient) {
+  constructor(private jsonService: JsonService, private http: HttpClient, private router: Router, private answerservice: AnswerService) {
    
   }
   
+  // Move to top
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+
+  // Console log check for answer array
   getArray(){
     console.log(this.questionAnswer)
   }
-  pushAnswer(iteration: any,  answer: any){
-     // Ensure the element at `iteration` is an array
-     if (!Array.isArray(this.questionAnswer[iteration])) {
-      this.questionAnswer[iteration] = [];
+
+  // Function to push to array
+  pushAnswer(iterationPillar: any, iterationRow: any, answer: any) {
+    // Ensure the first level array exists
+    if (!Array.isArray(this.questionAnswer[iterationPillar])) {
+      this.questionAnswer[iterationPillar] = [];
+    }
+
+    // Ensure the second level array exists
+    if (!Array.isArray(this.questionAnswer[iterationPillar][iterationRow])) {
+      this.questionAnswer[iterationPillar][iterationRow] = [];
     }
 
     // Now push the answer
-    this.questionAnswer[iteration].push(answer);
+    this.questionAnswer[iterationPillar][iterationRow].push(answer);
   }
 
   
-  
+  // Function to finish questions and start result
   SubmitResults(){
-
-  }
-  startResults(){
-    this.boolResults = true
-  }
-  initiateQuestionNumber(answer: any){
-    this.questionAnswer.push(answer)
-    this.questionNumber += 1
+    this.answerservice.pushAnswers(this.questionAnswer)
+    console.log(this.questionAnswer)
+    // function to push answers
+    //this.router.navigate(['/result'])
+    
   }
 
+  // Start Calc
   StartCalculator(){
     this.boolCalculator = true
     this.LoadJson()
   }
 
+
+  // Get current pillar in json
   getCurrentPillar(){
     return this.keyArray[this.currentKey]
-
   }
 
+  // Add a iteration in json
   addCurrentKey(){
-    this.pushAnswers = true
     this.currentKey += 1
   }
 
+  // Get back in question set
   removeCurrentKey(){
     this.currentKey -= 1
   }
 
+
+  // get current key
   getCurrentKey(){
     return this.currentKey
   }
 
+
+  // load local json
   LoadJson(){
     this.JsonArray = this.jsonService.getJsonLocal()
     console.log(this.jsonService)
   }
 
+  
+
+  // get object from json
   getObjectKeys(obj: any): string[] {
     return Object.keys(obj);
   }

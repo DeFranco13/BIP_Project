@@ -36,7 +36,7 @@
 
         <!--Questions-->
         <div *ngIf="boolCalculator == true && JsonArray" class="questions">
-            <div *ngFor="let key of getObjectKeys(JsonArray)">
+            <div *ngFor="let key of getObjectKeys(JsonArray); let j = index">
                 <!--This checks the current key like health etc this is important for the question pages-->
                 <div *ngIf="key == getCurrentPillar()" class="key1">
                     <h1>{{ key }}</h1>
@@ -76,7 +76,6 @@
 
                             <input (click)="pushAnswer(i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
                             <label class="Yesno_label_R" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>
-                           
                         </div>
                         <!--This checks type of answer and creates custom answer-->
                         <input *ngIf="question.answer_style == 'Custom' " type="text" class="Custom" placeholder="Enter your answer here">
@@ -89,9 +88,7 @@
                         <button *ngIf="getCurrentKey() > 0" (click)="removeCurrentKey()" >Previous</button>
                         <div *ngIf="getCurrentKey() > 0" class="blank"></div>
                         <button *ngIf="getCurrentKey() < 7" (click)="addCurrentKey()">Next</button>
-                        <button *ngIf="getCurrentKey() >= 7">Finish</button>
-                        
-                        <button (click)="getArray()">load</button>
+                        <button (click)="SubmitResults()" *ngIf="getCurrentKey() >= 7">Finish</button>
                     </div>
                 </div>
             </div>  
