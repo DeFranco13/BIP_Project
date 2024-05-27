@@ -71,11 +71,11 @@
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
-                            <input (click)="pushAnswer(i, 'yes')" type="radio" value="Yes" class="Yesno_input" id="Yesno1_{{i}}" name="yesno_1_{{i}}">
+                            <input (click)="pushAnswer(j, i, 'yes')" type="radio" value="Yes" class="Yesno_input" id="Yesno1_{{i}}" name="yesno_1_{{i}}">
                             <label class="Yesno_label_L" id="yes1_{{i}}" for="Yesno1_{{i}}">Yes</label>
 
-                            <input (click)="pushAnswer(i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
-                            <label class="Yesno_label_R" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>
+                            <input (click)="pushAnswer(j, i, 'no')" type="radio" value="No" class="Yesno_input" id="Yesno2_{{i}}" name="yesno_1_{{i}}">
+                            <label class="Yesno_label_R" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>             
                         </div>
                         <!--This checks type of answer and creates custom answer-->
                         <input *ngIf="question.answer_style == 'Custom' " type="text" class="Custom" placeholder="Enter your answer here">
