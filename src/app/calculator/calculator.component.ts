@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { JsonService } from '../services/serverCall';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class CalculatorComponent {
   keyArray = ["Company", "Materials", "Energy", "Water", "Biodiversity", "Society & Culture", "Health", "Value"]
   currentKey: number = 0
 
-  constructor(private jsonService: JsonService, private http: HttpClient) {
+  constructor(private jsonService: JsonService, private http: HttpClient, private router: Router) {
    
   }
   
@@ -30,12 +31,9 @@ export class CalculatorComponent {
     console.log(this.questionAnswer)
   }
   pushAnswer(iteration: any,  answer: any){
-     // Ensure the element at `iteration` is an array
      if (!Array.isArray(this.questionAnswer[iteration])) {
       this.questionAnswer[iteration] = [];
     }
-
-    // Now push the answer
     this.questionAnswer[iteration].push(answer);
   }
 
@@ -43,6 +41,9 @@ export class CalculatorComponent {
   
   SubmitResults(){
 
+    // function to push answers
+    this.router.navigate(['/result'])
+    
   }
   startResults(){
     this.boolResults = true

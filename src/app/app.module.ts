@@ -9,6 +9,7 @@ import { RouterLink, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './services/loginProvider';
+import { ResultComponent } from './result/result.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LoginService } from './services/loginProvider';
     AppComponent,
     WelcomeComponent,
     CalculatorComponent,
-    LoginComponent
+    LoginComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { LoginService } from './services/loginProvider';
       {path: "welcome", component: WelcomeComponent},
       {path: "", component: WelcomeComponent},
       {path: "calculator", component: CalculatorComponent},
-      {path: "login", component: LoginComponent}
+      {path: "login", component: LoginComponent},
+      {path: "result", component: ResultComponent}
     ])
   ],
   providers: [],
