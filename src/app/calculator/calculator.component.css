@@ -317,7 +317,11 @@ button {
     justify-content: center;
 }
 
-.Yesno_label:not(:last-of-type) {
+.Yesno_label_R:not(:last-of-type) {
+    border-right: 1px solid  #c5c5c5;
+}
+
+.Yesno_label_L:not(:last-of-type) {
     border-right: 1px solid  #c5c5c5;
 }
 
@@ -325,7 +329,25 @@ button {
     display: none;
 }
 
-.Yesno_label{
+.Yesno_label_R{
+    padding: 30px 2.2rem;
+    color: #676a81;
+    cursor: pointer;
+    transition:  background 0.1s;
+    background: #e4e4e4;
+    padding-bottom: 1.6vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+
+
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+    
+    padding-left: 10.175vw;
+    padding-right: 10.175vw;
+    
+}
+
+.Yesno_label_L{
     padding: 30px 2.2rem;
     color: #676a81;
     cursor: pointer;
@@ -353,13 +375,19 @@ button {
     border-bottom-right-radius: 15px;
 }
 
-.Yesno_label:hover{
+.Yesno_label_R:hover{
     background-color: #d8d8d8;
 }
-.Yesno_input:checked + .Yesno_label{
+.Yesno_input:checked + .Yesno_label_R{
     background-color: #c0c0c0;
 }
 
+.Yesno_label_L:hover{
+    background-color: #d8d8d8;
+}
+.Yesno_input:checked + .Yesno_label_L{
+    background-color: #c0c0c0;
+}
 /* Template for text questions where you select few option - not finished */
 
 .key1 p{
@@ -433,6 +461,16 @@ button {
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
     margin-bottom: 0.5vw;
     margin-top: 0.5vw;
+}
+
+.Yesno_label_L{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.Yesno_label_R {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #agree1 {
