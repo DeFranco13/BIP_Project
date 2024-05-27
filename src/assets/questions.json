@@ -413,10 +413,13 @@
     "Company": {
         "questions": [
             {
-                "question": "Company name"
+                "question": "Company name",
+                "answer_style": "Custom"
+                
             },
             {
-                "question": "Country"
+                "question": "Country",
+                "answer_style": "Custom"
             },
             {
                 "question": "Total revenue for the last financial year",
@@ -441,7 +444,8 @@
                 }
             },
             {
-                "question": "Sector of Activity"
+                "question": "Sector of Activity",
+                "answer_style": "Custom"
             },
             {
                 "question": "Are you exporting to other countries?",
