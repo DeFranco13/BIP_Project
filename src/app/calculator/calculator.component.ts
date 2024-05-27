@@ -28,9 +28,16 @@ export class CalculatorComponent {
     console.log(this.questionAnswer)
   }
   pushAnswer(iteration: any,  answer: any){
-    this.questionAnswer[iteration]
-    
+     // Ensure the element at `iteration` is an array
+     if (!Array.isArray(this.questionAnswer[iteration])) {
+      this.questionAnswer[iteration] = [];
+    }
+
+    // Now push the answer
+    this.questionAnswer[iteration].push(answer);
   }
+
+  
   
   SubmitResults(){
 
