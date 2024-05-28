@@ -44,12 +44,44 @@
 
                         <div class="questions-layout">{{question.question}}</div>
 
-                        <div *ngIf="question.answer_style == 'Scale' ">
-                            Answer style is Scale
+                        <div *ngIf="question.answer_style == 'Scale' " class="SliderDiv">
+                            <h1>Slider value later<span id="output"></span></h1>
+                            <input (click)="pushAnswer(j, i, 'fixitlater')" min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  type="range" class="slider" id="slider_{{i}}">
+                            <script>
+                                function getSlider() {
+                                    let x = document.getElementById("slider_{{i}}").value;
+                                    document.getElementById('output').innerHTML = x;
+                                }
+                            </script>
                         </div>
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">
-                            Answer style is Multipe Choice
+                            <label class="multicontainer">"{{question.possible_answers}}"
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                              
+                            <label class="multicontainer">Two
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                              
+                            <label class="multicontainer">Three
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                              
+                            <label class="multicontainer">Four
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="multicontainer">Five
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        
                         </div>
                         
                         <!--This checks type of answer and creates custom answer-->
