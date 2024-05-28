@@ -17,6 +17,7 @@ export class LoginComponent {
   
  constructor(private loginService: LoginService){}
  
+
  changeState(){
   this.loginService.setLoginState(true)
 }

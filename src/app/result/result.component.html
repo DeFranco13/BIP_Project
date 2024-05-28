@@ -1,1 +1,78 @@
-<p>result works!</p>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header>
+        <header class="top-area">
+            <nav>
+                <div class="navbar-header">
+                    <a (click)="scrollToTop()"></a>
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a [routerLink]="['/welcome']" >Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <h1 class="title">Universal Circularity Economy Calculator</h1>
+        <p class="description">Dear Customer,<br>
+            Thank you in advance for your participation and your interest in knowing your level of circularity. Your participation will help us to improve and develop this tool, your contribution has been fundamental.  This report is generated automatically by artificial intelligence, respecting the pre-established commands and according to your answers.
+        </p>
+
+        <div class="companyBox">
+            <h1 class="companyTitle">Company Information</h1>
+            <div class="companyGrid">
+                <div class="companyBox-1">
+                    <h2 class="companyAnswer">Company: ...</h2>
+                    <h2 class="companyAnswer">Country: ...</h2>
+                    <h2 class="companyAnswer">Employees: ...</h2>
+                </div>
+                <div class="companyBox-2">
+                    <h2 class="companyAnswer">Sector of activity: ...</h2>
+                    <h2 class="companyAnswer">Exporting (km): ...</h2>
+                    <h2 class="companyAnswer">Importing (km): ...</h2>
+                </div>
+            </div>
+        </div>
+        <div class="pillarScoreBox">
+
+            <div class="pillarScoreBox-1">
+                <h1 class="pillarScoreTitle">Calculator Pillar Score Estimate</h1>
+                <h2 class="pillarAnswer">Materials: ... </h2>
+                <h2 class="pillarAnswer">Energy: ... </h2>
+                <h2 class="pillarAnswer">Water: ... </h2>
+                <h2 class="pillarAnswer">Biodiversity: ... </h2>
+                <h2 class="pillarAnswer">Society & culture: ... </h2>
+                <h2 class="pillarAnswer">Health: ... </h2>
+                <h2 class="pillarAnswer">Value: ... </h2>
+
+            </div>
+
+            <div class="pillarScoreBox-2">
+                <div class="pillarScoreDiagram">DIAGRAM</div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+            <section class="footer">Designed, Developed by Maksym Taran, Jordi Fransen.</section> 
+        <hr/>
+    </footer>
+  </body>
+</html>
+

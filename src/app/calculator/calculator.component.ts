@@ -55,7 +55,7 @@ export class CalculatorComponent {
     this.answerservice.pushAnswers(this.questionAnswer)
     console.log(this.questionAnswer)
     // function to push answers
-    //this.router.navigate(['/result'])
+    this.router.navigate(['/result'])
     
   }
 
