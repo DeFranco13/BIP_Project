@@ -248,6 +248,50 @@ main{
     border: 1px solid black;
     height: 60vh;
 }
+
+
+/* Total box */
+
+.totalBox{
+    border: 1px solid black;
+    height: 15vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+}
+
+.totalBox .totalTitle{
+    text-align: center;
+    padding-top: 2vh;
+    border-bottom: 1px solid black;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #206c24;
+    color: white;
+}
+
+.totalAmount{
+    display: grid;
+}
+
+.totalBox .totalBox-1{
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vh;
+}
+.totalBox .totalBox-1 .totalText, .totalBox .totalBox-2 .totalFinal{
+    text-align: left;
+    padding-top: 2vh;
+    padding-left: 1vh;
+}
+
+.totalBox .totalBox-2{
+    grid-column: 0;
+    grid-row: 1;
+}
+
 /*-------------------------------------
 
         8. FOOTER
