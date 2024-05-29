@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnswerService } from '../services/answerService';
 
 @Component({
   selector: 'app-result',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class ResultComponent {
 
+  array: any = []
+  constructor(private answerService: AnswerService){
+
+  }
+
+  ngOnInit(){
+    this.array = this.answerService.getAnswer()
+    console.log(this.array)
+    
+  }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

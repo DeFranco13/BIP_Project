@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './services/loginProvider';
 import { ResultComponent } from './result/result.component';
+import { RequestComponent } from './request/request.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ResultComponent } from './result/result.component';
     WelcomeComponent,
     CalculatorComponent,
     LoginComponent,
-    ResultComponent
+    ResultComponent,
+    RequestComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ResultComponent } from './result/result.component';
       {path: "", component: WelcomeComponent},
       {path: "calculator", component: CalculatorComponent},
       {path: "login", component: LoginComponent},
-      {path: "result", component: ResultComponent}
+      {path: "result", component: ResultComponent},
+      {path: "request", component: RequestComponent}
     ])
   ],
   providers: [],
