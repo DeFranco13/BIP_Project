@@ -1,1 +1,34 @@
-<p>request works!</p>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header>
+        <header class="top-area">
+            <nav>
+                <div class="navbar-header">
+                    <a (click)="scrollToTop()"></a>
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a [routerLink]="['/welcome']" >Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+          </header>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <h1 class="mainTitle">Company recom page</h1>
+    </main>
+  </body>
+</html>
+
