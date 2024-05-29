@@ -45,37 +45,28 @@
                         <div class="questions-layout">{{question.question}}</div>
 
                         <div *ngIf="question.answer_style == 'Scale' " class="SliderDiv">
+
                             <h1><span id="output">{{inputElement.value}}</span></h1>
                             <input (click)="pushAnswer(j, i, 'fixitlater')" min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value)" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
+
                         </div>
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">
-                            <label class="multicontainer">"{{question.possible_answers.body}}"
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                              
-                            <label class="multicontainer">Two
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                              
-                            <label class="multicontainer">Three
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                              
-                            <label class="multicontainer">Four
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
+                            <div *ngFor="let answer of question.possible_answers">
+                                <label class="multicontainer">"{{answer.body}}"
+                                    <input type="checkbox" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
 
-                            <label class="multicontainer">Five
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            
-                        
+                        <div *ngIf="question.answer_style == 'One choice'  ">
+                            <div *ngFor="let answer of question.possible_answers">
+                                <label class="multicontainer">"{{answer.body}}"
+                                    <input type="radio" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                         
                         <!--This checks type of answer and creates custom answer-->
