@@ -47,23 +47,22 @@
                         <div *ngIf="question.answer_style == 'Scale' " class="SliderDiv">
 
                             <h1><span id="output">{{inputElement.value}}</span></h1>
-                            <input (click)="pushAnswer(j, i, 'fixitlater')" min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value)" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
-
+                            <input  min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value)" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
                         </div>
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">
-                            <div *ngFor="let answer of question.possible_answers">
+                            <div *ngFor="let answer of question.possible_answers; let k = index">
                                 <label class="multicontainer">"{{answer.body}}"
-                                    <input type="checkbox" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <input type="checkbox" (click)="pushAnswer(j, i, answer.body)" name="slider_{{i}}">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                         </div>
 
-                        <div *ngIf="question.answer_style == 'One choice'  ">
+                        <div *ngIf="question.answer_style == 'One choice'">
                             <div *ngFor="let answer of question.possible_answers">
                                 <label class="multicontainer">"{{answer.body}}"
-                                    <input type="radio" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <input type="radio" (click)="pushAnswer(j, i, answer.body)" name="slider_{{i}}">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>

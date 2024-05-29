@@ -346,7 +346,8 @@
             {
                 "question": "Are you using any of these materials?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
+                "possible_answers":
+                {
                     "Copper": 0,
                     "Iron": 1,
                     "Wood": 2,
