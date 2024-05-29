@@ -140,7 +140,7 @@ header nav .navbar-menu ul li a:hover::after{
 --------------------------------------*/
 
 main{
-    height: 500vh;
+    height: 260vh;
 }
 .title{
     font-size: 30px;
@@ -292,6 +292,132 @@ main{
     grid-row: 1;
 }
 
+
+/* Recomendation */
+
+.recomBox{
+    margin-top: 8vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 70vh;
+}
+
+.recomBox .recomTitle{
+    text-align: center;
+    padding-top: 4vh;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.feedbackBox{
+    display: grid;
+    margin-top: 8vh;
+    width: 50%;
+}
+.feedbackCol-1{
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 5vh;
+}
+.feedbackCol-2{
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 1vh;
+    border-left: 1px solid black;
+}
+.feedbackCol-3{
+    grid-column: 0;
+    grid-row: 1;
+    padding-left: 1vh;
+    border-left: 1px solid black;
+}
+
+.feedbaclCol-Title{
+    margin-top: 2vh;
+    background-color: green;
+    height: 4vh;
+    width: 90%;
+    text-align: center;
+    color: white;
+    padding-top: 1vh;
+    font-weight: 600;
+}
+
+.feedbaclCol-Answer{
+    margin-top: 2vh;
+    height: 4vh;
+    width: 90%;
+    text-align: center;
+    padding-top: 1vh;
+    font-size: 20px;
+}
+
+.feedbaclCol-feedback{
+    margin-top: 2vh;
+    height: 4vh;
+    width: 90%;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+/* Outro */
+
+.outro{
+    height: 10vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    text-align: center;
+}
+
+.outroTitle, .outroRedirect{
+    font-size: 18px;
+    margin-bottom: 3vh;
+}
+
+/* button */
+
+/* 4.4 button container */
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+}
+
+
+/* 4.5 button layout */
+.redirect-button {
+    line-height: 1.5rem;
+    height: 3.5rem;
+    width: 8.75rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+	font-size:16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: hsl(118, 79%, 35%);
+    border: hsl(118, 79%, 35%) 3px solid;
+    background-color:transparent;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 hsl(118, 79%, 35%), 0 0 0.5em 0 hsl(118, 79%, 35%);
+    transition:all 0.5s;
+}
+       
+
+/*  4.6 button hover */
+.redirect-button:hover{
+    background-color:hsl(118, 79%, 35%);
+    color:#fff;
+}
 /*-------------------------------------
 
         8. FOOTER
