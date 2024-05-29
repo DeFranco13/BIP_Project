@@ -59,7 +59,7 @@
                             </div>
                         </div>
 
-                        <div *ngIf="question.answer_style == 'One choice'">
+                        <div *ngIf="question.answer_style == 'One Choice'">
                             <div *ngFor="let answer of question.possible_answers">
                                 <label class="multicontainer">"{{answer.body}}"
                                     <input type="radio" (click)="pushAnswer(j, i, answer.body)" name="slider_{{i}}">

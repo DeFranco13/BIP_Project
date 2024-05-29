@@ -4,11 +4,7 @@
             {
                 "question": "Is your company actively promoting wellness between emloyees and work-life balance?",
                 "context": "By employee wellness we mean: Health insurance, recreational and social activities, physical activities, gym, flexible working hours, etc.",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 5
-                }
+                "answer_style": "Yes/No"
             },
             {
                 "question": "Have you established a plan to guarantee worker safety standards?",
@@ -16,13 +12,13 @@
             },
             {
                 "question": "Which of the following best describes the organization's approach to employee wellness programs?",
-                "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Minimal Efforts": 0,
-                    "Moderate Efforts": 2,
-                    "Extensive Efforts": 4,
-                    "Comprehensive Efforts": 6
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "Minimal Efforts", "value": 0},
+                    {"body": "Moderate Efforts", "value": 2},
+                    {"body": "Extensive Efforts", "value": 4},
+                    {"body": "Comprehensive Efforts", "value": 6}
+                ]
             }
         ]
     },
@@ -81,19 +77,16 @@
                 }
             },
             {
-                "question": "Are the measures for respecting and preserving cultural heritage in the organization known to all exciting levels in the organization?",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 5
-                }
+                "question": "Are the measures for respecting and preserving cultural heritage communicated to all levels within the organization?",
+                "context": "By measures we mean: promoting of awarness, investing in conservation projects, physically protect cultural heritage sites, adapting sustainable practices that minimize the environmental impact on cultural heritage sites.",
+                "answer_style": "Yes/No"
             }
         ]
     },
     "Biodiversity": {
         "questions": [
             {
-                "question": "Does the company have policies or initiatives in place to protect local ecosystems?",
+                "question": "To what extent do you agree with this statement: The company have policies or initiatives in place to protect local ecosystems.",
                 "answer_style": "Agree/Disagree",
                 "possible_answers": {
                     "Strongly Disagree": 0,
@@ -104,7 +97,7 @@
                 }
             },
             {
-                "question": "Does the company conduct biodiversity assessments or surveys to understand its impact?",
+                "question": "To what extent do you agree with this statement: The company conduct biodiversity assessments or surveys to understand its impact.",
                 "answer_style": "Agree/Disagree",
                 "possible_answers": {
                     "Strongly Disagree": 0,
@@ -115,7 +108,7 @@
                 }
             },
             {
-                "question": "Is the company involved in habitat restoration or conservation projects?",
+                "question": "To what extent do you agree with this statement: The company is involved in habitat restoration or conservation projects.",
                 "answer_style": "Agree/Disagree",
                 "possible_answers": {
                     "Strongly Disagree": 0,
@@ -126,7 +119,8 @@
                 }
             },
             {
-                "question": "Are there any measures in place to prevent harm to endangered species?",
+                "question": "To what extent do you agree with this statement: The company has measures in place to prevent harm to endangered species?",
+                "context": "By measures we mean: Developing and enforcing a biodiversity policy, conduct environmental impact assesments, using sustainable methods in resource extraction and agriculture, promoting awareness about protecting endangered species, supporting habitat restoration projects, reporting on biodiversity efforts in sustainability reports, etc.",
                 "answer_style": "Agree/Disagree",
                 "possible_answers": {
                     "Strongly Disagree": 0,
@@ -138,24 +132,24 @@
             },
             {
                 "question": "Which of the following best describes the company's approach to biodiversity conservation?",
-                "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "No Efforts": 0,
-                    "Limited Efforts": 2,
-                    "Moderate Efforts": 4,
-                    "Extensive Efforts": 6
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "No Efforts", "value": 0},
+                    {"body": "Moderate Efforts", "value": 2},
+                    {"body": "Extensive Efforts", "value": 4},
+                    {"body": "Extensive Efforts", "value": 6}
+                ]
             }
         ]
     },
     "Water": {
         "questions": [
             {
-                "question": "What is your company's annual water consumption (m3)?",
+                "question": "What is your company's weekly water consumption (m3)?",
                 "answer_style": "Scale",
                 "possible_answers": {
                     "min": 0,
-                    "max": "unlimited"
+                    "max": 1000000
                 }
             },
             {
@@ -206,17 +200,17 @@
             {
                 "question": "What specific renewable energy sources are being used?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Solar energy": 2,
-                    "Wind enery": 2,
-                    "Hydrogen energy": 2,
-                    "Biomass energy": 2,
-                    "Thermal energy": 2,
-                    "Waste-to-energy technologies (WtE)": 2,
-                    "Tidal energy": 2,
-                    "Wave energy": 2,
-                    "Biogas": 2
-                }
+                "possible_answers": [
+                    {"body": "Solar energy", "value": 2},
+                    {"body": "Wind energy", "value": 2},
+                    {"body": "Hydrogen energy", "value": 2},
+                    {"body": "Biomass energy", "value": 2},
+                    {"body": "Thermal energy", "value": 2},
+                    {"body": "Waste-to-energy technologies (WtE)", "value": 2},
+                    {"body": "Tidal energy", "value": 2},
+                    {"body": "Wave energy", "value": 2},
+                    {"body": "Biogas", "value": 2}
+                ]
             },
             {
                 "question": "Does your company produce energy to be sold?",
@@ -232,13 +226,13 @@
             },
             {
                 "question": "What is the amount of energy consumed in the year (MWh)?",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "0 - 25 MWh": 0,
-                    "25 - 50 MWh": 1,
-                    "50 - 100 MWh": 2,
-                    "100+ MWh": 3
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "0 - 25 MWh"},
+                    {"body": "25 - 50 MWh"},
+                    {"body": "50 - 100 MWh"},
+                    {"body": "100+ MWh"}
+                ]
             },
             {
                 "question": "What percentage of energy comes from renewable sources?",
@@ -266,6 +260,7 @@
             },
             {
                 "question": "How much co2 does the production process emit (CO2g/kwh)?",
+                "answer_style": "Scale",
                 "possible_answers": {
                     "min": 0,
                     "max": 10000
@@ -274,25 +269,25 @@
             {
                 "question": "How do you transport your goods?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Ships": 0,
-                    "Plane": 1,
-                    "Train": 2,
-                    "Truck": 3,
-                    "Cars": 4,
-                    "Vans": 5
-                }
+                "possible_answers": [
+                    {"body": "Ships", "value": 5},
+                    {"body": "Plane", "value": 1},
+                    {"body": "Train", "value": 6},
+                    {"body": "Truck", "value": 3},
+                    {"body": "Cars", "value": 2},
+                    {"body": "Vans", "value": 4}
+                ]
             },
             {
                 "question": "What type of vehicles does your company use for transportation of goods?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Electric": 0,
-                    "Diesel": 1,
-                    "Gasoline": 2,
-                    "Hybrid": 3,
-                    "Gas": 4
-                }
+                "possible_answers": [
+                    {"body": "Electric", "value": 4},
+                    {"body": "Diesel", "value": 0},
+                    {"body": "Gasoline", "value": 0},
+                    {"body": "Hybrid", "value": 2},
+                    {"body": "Gas", "value": 1}
+                ]
             }
         ]
     },
@@ -346,13 +341,21 @@
             {
                 "question": "Are you using any of these materials?",
                 "answer_style": "Multiple Choice",
-                "possible_answers":
-                {
-                    "Copper": 0,
-                    "Iron": 1,
-                    "Wood": 2,
-                    "...": 3
-                }
+                "possible_answers": [
+                    {"body": "Copper", "value": 2},
+                    {"body": "Iron", "value": 2},
+                    {"body": "Wood", "value": 3},
+                    {"body": "Glass", "value": 3},
+                    {"body": "Polypropylene", "value": 1},
+                    {"body": "Aluminium","value": 2},
+                    {"body": "Stainless steel", "value": 2},
+                    {"body": "Brass", "value": 1},
+                    {"body": "Polyamide", "value": 1},
+                    {"body": "Gold", "value": 1},
+                    {"body": "Silver", "value": 1},
+                    {"body": "Cork", "value": 3}
+
+                ]
             },
             {
                 "question": "Industrial waste is sent for treatment?",
@@ -393,13 +396,13 @@
             {
                 "question": "What products are being separated?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Plastic": 0,
-                    "Glass": 1,
-                    "Paper": 2,
-                    "Metals": 3,
-                    "Cardboard": 4
-                }
+                "possible_answers": [
+                    {"body": "Plastic", "value": 2},
+                    {"body": "Glass", "value": 2},
+                    {"body": "Paper", "value": 2},
+                    {"body": "Metals", "value": 2},
+                    {"body": "Cardboard", "value": 2}
+                ]
             },
             {
                 "question": "What is the % of all separated products?",
@@ -416,7 +419,6 @@
             {
                 "question": "Company name",
                 "answer_style": "Custom"
-                
             },
             {
                 "question": "Country",
@@ -424,25 +426,24 @@
             },
             {
                 "question": "Total revenue for the last financial year",
-                "answer_style": "One choice",
+                "answer_style": "One Choice",
                 "possible_answers": [
-                    { "body": "100 K - 499 K"},
-                    { "body": "500 K - 999 K"},
-                    { "body": "1 M - 2.9 M"},
-                    { "body": "3 M - 4.9 M"},
-                    { "body": "+ 5 M"}
-                
+                    {"body": "100 K - 499 K"},
+                    {"body": "500 K - 999 K"},
+                    {"body": "1 M - 2.9 M"},
+                    {"body": "3 M - 4.9 M"},
+                    {"body": "+ 5 M"}
                 ]
             },
             {
                 "question": "Total number of employees",
-                "answer_style": "One choice",
+                "answer_style": "One Choice",
                 "possible_answers": [
-                    { "body": "01-14"},
-                    { "body": "15-29"},
-                    { "body": "30-49"},
-                    { "body": "50-99"},
-                    { "body": "+ 100"}
+                    {"body": "01-14"},
+                    {"body": "15-29"},
+                    {"body": "30-49"},
+                    {"body": "50-99"},
+                    {"body": "+ 100"}
                 ]
             },
             {
@@ -458,17 +459,17 @@
                 "answer_style": "Scale",
                 "possible_answers": {
                     "min": 0,
-                    "max": 5
+                    "max": 100000
                 }
             },
             {
                 "question": "How do you export your products?",
                 "answer_style": "Multiple Choice",
                 "possible_answers": [
-                    { "body": "Plane"},
-                    { "body": "Truck"},
-                    { "body": "Boats"},
-                    { "body": "Trains"}
+                    {"body": "Plane", "value": 1},
+                    {"body": "Truck", "value": 2},
+                    {"body": "Ships", "value": 3},
+                    {"body": "Trains", "value": 4}
                 ]
             },
             {
@@ -480,18 +481,18 @@
                 "answer_style": "Scale",
                 "possible_answers": {
                     "min": 0,
-                    "max": "unlimited"
+                    "max": 100000
                 }
             },
             {
                 "question": "How do you import your products?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Plane": 0,
-                    "Truck": 1,
-                    "Boats": 2,
-                    "Trains": 3
-                }
+                "possible_answers": [
+                    {"body": "Plane", "value": 1},
+                    {"body": "Truck", "value": 2},
+                    {"body": "Ships", "value": 3},
+                    {"body": "Trains", "value": 4}
+                ]
             }
         ]
     }
