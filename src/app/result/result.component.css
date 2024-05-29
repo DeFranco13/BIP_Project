@@ -1,3 +1,86 @@
+/*
+    START OF DOCUMENTATION
+    WRITTEN BY FRANSEN JORDI
+
+    CSS FOR WELCOME COMPONENT 
+
+    1.      BODY
+    1.1     font import
+    1.2     body setup
+
+    2.      HEADER
+    2.1     header setup
+    2.2     header display
+    2.3     navbar section
+    2.4     logo section
+    2.5     logo
+    2.6     logo pointer
+    2.7     nav menu list
+    2.8     nav menu elements
+    2.9     nav menu objects
+    2.10    underline setup
+    2.11    a element hover styling
+    2.12    underline hover styling
+    
+    3.      MAIN
+    3.1     main section
+    3.2     main title layout
+    3.3     main description layout
+    
+    4.      COMPANY
+    4.1     company section
+    4.2     company title
+    4.3     company grid
+    4.4     company grid section 1
+    4.5     company grid section 2
+    4.6     company grid section text
+    
+    5.      PILLAR
+    5.1     pillar section
+    5.2     pillar box 1
+    5.3     pillar box 2
+    5.4     pillar box title
+    5.5     pillar box answer
+    5.6     pillar diagram
+    
+    6.      TOTAL
+    6.1     total section
+    6.2     total title
+    6.3     total amount
+    6.4     total box 1
+    6.5     total box final
+    6.6     total box 2
+    
+    7.      RECOM
+    7.1     recom section
+    7.2     recom title
+    7.3     feedback box
+    7.4     feedback column 1
+    7.5     feedback column 2
+    7.6     feedback column 3
+    7.7     feedback column title
+    7.8     feedback column answer
+    7.9     feedback column feedback
+    
+    8.      OUTRO
+    8.1     outro section
+    8.2     outro title and description
+    
+    9.      BUTTON
+    9.1     button container
+    9.2     button layout
+    9.3     button layout hover
+    
+    10.     FOOTER
+    10.1    footer section
+
+*/
+
+
+
+
+
+
 /*-------------------------------------
 
         1. BODY
@@ -139,9 +222,13 @@ header nav .navbar-menu ul li a:hover::after{
 
 --------------------------------------*/
 
+/* 3.1 Main section */
 main{
     height: 260vh;
 }
+
+
+/* 3.2 Main title layout */
 .title{
     font-size: 30px;
     font-weight: 700;
@@ -153,6 +240,9 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* 3.3 Main description layout */
 .description{
     text-align: left;
     width: 90%;
@@ -161,7 +251,14 @@ main{
     margin-top: 3vh;
 }
 
-/* COMPANY */
+
+/*-------------------------------------
+
+        4. COMPANY
+
+--------------------------------------*/
+
+/* 4.1 company section */
 .companyBox{
     height: 34vh;
     width: 90%;
@@ -171,6 +268,8 @@ main{
     margin-top: 3vh;
 }
 
+
+/* 4.2 company title */
 .companyBox .companyTitle{
     text-align: center;
     padding-top: 2vh;
@@ -181,6 +280,9 @@ main{
     background-color: #206c24;
     color: white;
 }
+
+
+/* 4.3 company grid */
 .companyBox .companyGrid{
     display: grid;
     height: 23vh;
@@ -189,24 +291,38 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* 4.4 company grid section 1 */
 .companyBox .companyGrid .companyBox-1{
     grid-column: 1;
     grid-row: 1; 
 }
+
+
+/* 4.5 company grid section 2 */
 .companyBox .companyGrid .companyBox-2{
     grid-column: 0;
     grid-row: 1;
     border-left: 1px solid black;
 }
 
+
+/* 4.6 company grid section text */
 .companyBox .companyGrid .companyBox-1 .companyAnswer, .companyBox .companyGrid .companyBox-2 .companyAnswer{
     padding-top: 3vh;
     font-size: 20px;
     padding-left: 4vh;
 }
 
-/* PILLAR SCORE */
+/*-------------------------------------
 
+        5. PILLAR
+
+--------------------------------------*/
+
+
+/* 5.1 pillar section */
 .pillarScoreBox{
     height: 60vh;
     width: 90%;
@@ -216,17 +332,23 @@ main{
     display: grid;
 }
 
+
+/* 5.2 pillar box 1 */
 .pillarScoreBox .pillarScoreBox-1{
     grid-column: 1;
     grid-row: 1;
     border: 1px solid black;
 }
 
+
+/* 5.3 pillar box 2 */
 .pillarScoreBox .pillarScoreBox-2{
     grid-column: 0;
     grid-row: 1;
 }
 
+
+/* 5.4 pillar box title */
 .pillarScoreBox .pillarScoreBox-1 .pillarScoreTitle{
     text-align: center;
     padding-top: 2vh;
@@ -238,20 +360,30 @@ main{
     color: white;
 }
 
+
+/* 5.5 pillar box answer */
 .pillarScoreBox .pillarScoreBox-1 .pillarAnswer{
     padding-top: 4vh;
     font-size: 20px;
     padding-left: 4vh;
 }
 
+
+/* 5.6 pillar diagram */
 .pillarScoreBox .pillarScoreBox-2 .pillarScoreDiagram{
     border: 1px solid black;
     height: 60vh;
 }
 
 
-/* Total box */
+/*-------------------------------------
 
+        6. TOTAL
+
+--------------------------------------*/
+
+
+/* 6.1 total section */
 .totalBox{
     border: 1px solid black;
     height: 15vh;
@@ -261,6 +393,8 @@ main{
     margin-top: 8vh;
 }
 
+
+/* 6.2 total title */
 .totalBox .totalTitle{
     text-align: center;
     padding-top: 2vh;
@@ -272,29 +406,44 @@ main{
     color: white;
 }
 
+
+/* 6.3 total amount */
 .totalAmount{
     display: grid;
 }
 
+
+/* 6.4 total box 1 */
 .totalBox .totalBox-1{
     grid-column: 1;
     grid-row: 1;
     height: 8vh;
 }
+
+
+/* 6.5 total box final */
 .totalBox .totalBox-1 .totalText, .totalBox .totalBox-2 .totalFinal{
     text-align: left;
     padding-top: 2vh;
     padding-left: 1vh;
 }
 
+
+/* 6.6 total box 2 */
 .totalBox .totalBox-2{
     grid-column: 0;
     grid-row: 1;
 }
 
 
-/* Recomendation */
+/*-------------------------------------
 
+        7. RECOMMANDATION
+
+--------------------------------------*/
+
+
+/* 7.1 recom section */
 .recomBox{
     margin-top: 8vh;
     width: 90%;
@@ -304,6 +453,8 @@ main{
     height: 70vh;
 }
 
+
+/* 7.2 recom title */
 .recomBox .recomTitle{
     text-align: center;
     padding-top: 4vh;
@@ -311,22 +462,33 @@ main{
     font-size: 20px;
 }
 
+
+/* 7.3 feedback box */
 .feedbackBox{
     display: grid;
     margin-top: 8vh;
     width: 50%;
 }
+
+
+/* 7.4 feedback column 1 */
 .feedbackCol-1{
     grid-column: 1;
     grid-row: 1;
     padding-left: 5vh;
 }
+
+
+/* 7.5 feedback colum 2 */
 .feedbackCol-2{
     grid-column: 2;
     grid-row: 1;
     padding-left: 1vh;
     border-left: 1px solid black;
 }
+
+
+/* 7.6 feedback colum 3 */
 .feedbackCol-3{
     grid-column: 0;
     grid-row: 1;
@@ -334,6 +496,8 @@ main{
     border-left: 1px solid black;
 }
 
+
+/* 7.7 feedback column title */
 .feedbaclCol-Title{
     margin-top: 2vh;
     background-color: green;
@@ -345,6 +509,8 @@ main{
     font-weight: 600;
 }
 
+
+/* 7.8 feedback column answer */
 .feedbaclCol-Answer{
     margin-top: 2vh;
     height: 4vh;
@@ -354,6 +520,8 @@ main{
     font-size: 20px;
 }
 
+
+/* 7.9 feedback column feedback */
 .feedbaclCol-feedback{
     margin-top: 2vh;
     height: 4vh;
@@ -362,8 +530,14 @@ main{
     padding-top: 1vh;
 }
 
-/* Outro */
+/*-------------------------------------
 
+        8. OUTRO
+
+--------------------------------------*/
+
+
+/* 8.1 outro section */
 .outro{
     height: 10vh;
     width: 90%;
@@ -373,14 +547,20 @@ main{
     text-align: center;
 }
 
+
+/* 8.2 outro title and description */
 .outroTitle, .outroRedirect{
     font-size: 18px;
     margin-bottom: 3vh;
 }
 
-/* button */
+/*-------------------------------------
 
-/* 4.4 button container */
+        9. BUTTON
+
+--------------------------------------*/
+
+/* 9.1 button container */
 .button-container {
     display: flex;
     justify-content: center; 
@@ -389,7 +569,7 @@ main{
 }
 
 
-/* 4.5 button layout */
+/* 9.2 button layout */
 .redirect-button {
     line-height: 1.5rem;
     height: 3.5rem;
@@ -413,19 +593,19 @@ main{
 }
        
 
-/*  4.6 button hover */
+/*  9.3 button hover */
 .redirect-button:hover{
     background-color:hsl(118, 79%, 35%);
     color:#fff;
 }
 /*-------------------------------------
 
-        8. FOOTER
+        10. FOOTER
 
 --------------------------------------*/
 
 
-/* 8.1 footer section */
+/* 10.1 footer section */
 .footer{
     font-size: 16px;
     color: rgb(168, 168, 168);
