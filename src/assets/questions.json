@@ -424,13 +424,14 @@
             {
                 "question": "Total revenue for the last financial year",
                 "answer_style": "Scale",
-                "possible_answers": {
-                    "0": "100 K - 499 K",
-                    "1": "500 K - 999 K",
-                    "2": "1 M - 2.9 M",
-                    "3": "3 M - 4.9 M",
-                    "4": "+ 5 M"
-                }
+                "possible_answers": [
+                    { "body": "100 K - 499 K"},
+                    { "body": "500 K - 999 K"},
+                    { "body": "1 M - 2.9 M"},
+                    { "body": "3 M - 4.9 M"},
+                    { "body": "+ 5 M"}
+                
+                ]
             },
             {
                 "question": "Total number of employees",
