@@ -423,7 +423,7 @@
             },
             {
                 "question": "Total revenue for the last financial year",
-                "answer_style": "Scale",
+                "answer_style": "One choice",
                 "possible_answers": [
                     { "body": "100 K - 499 K"},
                     { "body": "500 K - 999 K"},
@@ -435,14 +435,14 @@
             },
             {
                 "question": "Total number of employees",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "01-14": 0,
-                    "15-29": 1,
-                    "30-49": 2,
-                    "50-99": 3,
-                    "+ 100": 4
-                }
+                "answer_style": "One choice",
+                "possible_answers": [
+                    { "body": "01-14"},
+                    { "body": "15-29"},
+                    { "body": "30-49"},
+                    { "body": "50-99"},
+                    { "body": "+ 100"}
+                ]
             },
             {
                 "question": "Sector of Activity",
@@ -463,12 +463,12 @@
             {
                 "question": "How do you export your products?",
                 "answer_style": "Multiple Choice",
-                "possible_answers": {
-                    "Plane": 0,
-                    "Truck": 1,
-                    "Boats": 2,
-                    "Trains": 3
-                }
+                "possible_answers": [
+                    { "body": "Plane"},
+                    { "body": "Truck"},
+                    { "body": "Boats"},
+                    { "body": "Trains"}
+                ]
             },
             {
                 "question": "Is your import from other countries?",
