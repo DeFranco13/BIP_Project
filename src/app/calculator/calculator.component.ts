@@ -34,7 +34,7 @@ export class CalculatorComponent {
   }
 
   // Function to push to array
-  pushAnswer(iterationPillar: any, iterationRow: any, answer: any) {
+  pushAnswer(iterationPillar: any, iterationRow: any, answer: any, value: any) {
     // Ensure the first level array exists
     if (!Array.isArray(this.questionAnswer[iterationPillar])) {
       this.questionAnswer[iterationPillar] = [];
@@ -47,10 +47,63 @@ export class CalculatorComponent {
 
     // Now push the answer
     this.questionAnswer[iterationPillar][iterationRow].push(answer);
+    console.log(answer)
+    console.log(value)
+    
+    if (iterationPillar == 0){
+      this.answerservice.pushValue("health", value)
+    }
+
+    if (iterationPillar == 1) {
+      this.answerservice.pushValue("value", value)
+    }
+
+    if (iterationPillar == 2){
+      this.answerservice.pushValue("soc", value)
+    }
+
+    if (iterationPillar == 3){
+      this.answerservice.pushValue("bio", value)
+    }
+
+    if (iterationPillar == 4){
+      this.answerservice.pushValue("water", value)
+    }
+
+    if (iterationPillar == 5){
+      this.answerservice.pushValue("energy", value)
+    }
+
+    if (iterationPillar == 6){
+      this.answerservice.pushValue("material", value)
+    }
+
+
+  }
+  test(value: any){
+    return value
   }
 
   pushAnswerMultipleChoice(iterationPillar: any, iterationRow: any, answer: any){
-    
+
+    if (!Array.isArray(this.questionAnswer[iterationPillar])) {
+      this.questionAnswer[iterationPillar] = [];
+    }
+
+     // Ensure the second level array exists
+     if (!Array.isArray(this.questionAnswer[iterationPillar][iterationRow])) {
+      this.questionAnswer[iterationPillar][iterationRow] = [];
+    }
+
+    console.log(this.questionAnswer[iterationPillar][iterationRow].find((element: any) => element == answer  ) );
+    if (this.questionAnswer[iterationPillar][iterationRow].find((element: any) => element == answer  ) != undefined ){
+      this.questionAnswer[iterationPillar][iterationRow] = this.questionAnswer[iterationPillar][iterationRow].filter((element: any) => element != answer);
+    } else{
+      // Now push the answer
+      this.questionAnswer[iterationPillar][iterationRow].push(answer);
+      console.log(answer)
+    }
+    console.log(this.questionAnswer[iterationPillar][iterationRow]);
   }
   
   // Function to finish questions and start result

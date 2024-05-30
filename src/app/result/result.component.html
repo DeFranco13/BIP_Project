@@ -53,7 +53,7 @@
 
             <div class="pillarScoreBox-1">
                 <h1 class="pillarScoreTitle">Calculator Pillar Score</h1>
-                <h2 class="pillarAnswer">Materials: ... </h2>
+                <h2 class="pillarAnswer">Materials: {{this.answerService.materialPoints}} </h2>
                 <h2 class="pillarAnswer">Energy: ... </h2>
                 <h2 class="pillarAnswer">Water: ... </h2>
                 <h2 class="pillarAnswer">Biodiversity: ... </h2>
@@ -61,7 +61,6 @@
                 <h2 class="pillarAnswer">Health: ... </h2>
                 <h2 class="pillarAnswer">Value: ... </h2>
             </div>
-
             <div class="pillarScoreBox-2">
                 <div class="pillarScoreDiagram">DIAGRAM</div>
             </div>
@@ -118,7 +117,7 @@
         </div>
 
         <div class="outro">
-            <h1 class="outroTitle">The entire UCEC team thanks you for your participation.</h1>
+            <h1 class="outroTitle">The entire UCC team thanks you for your participation.</h1>
             <h2 class="outroRedirect">Click here to request continuity of circularity study</h2>
             <div class="button-container">
                 <a class="redirect-button" [routerLink]="['/request']">Redirect me</a>
