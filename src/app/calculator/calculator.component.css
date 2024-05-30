@@ -448,6 +448,14 @@ button {
     border-right: 1px solid  #c5c5c5;
 }
 
+.Radio_label1:not(:last-of-type) {
+    border-right: 1px solid  #c5c5c5;
+}
+
+.Radio_label5:not(:last-of-type) {
+    border-right: 1px solid  #c5c5c5;
+}
+
 .Radio_input{
     display: none;
 }
@@ -464,22 +472,42 @@ button {
     margin-top: 0.5vw;
 }
 
+.Radio_label1{
+    padding: 30px 2.2rem;
+    color: #676a81;
+    cursor: pointer;
+    transition:  background 0.1s;
+    background: #e4e4e4;
+    padding-bottom: 1.6vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.Radio_label5{
+    padding: 30px 2.2rem;
+    color: #676a81;
+    cursor: pointer;
+    transition:  background 0.1s;
+    background: #e4e4e4;
+    padding-bottom: 1.6vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 .Yesno_label_L{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 .Yesno_label_R {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-#agree1 {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-#agree5 {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -491,6 +519,19 @@ button {
     background-color: #c0c0c0;
 }
 
+.Radio_label1:hover{
+    background-color: #d8d8d8;
+}
+.Radio_input:checked + .Radio_label1{
+    background-color: #c0c0c0;
+}
+
+.Radio_label5:hover{
+    background-color: #d8d8d8;
+}
+.Radio_input:checked + .Radio_label5{
+    background-color: #c0c0c0;
+}
 
 /*template for the questions for you input custom answer */
 .key1 input {
@@ -541,7 +582,7 @@ button {
     color: #676a81;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 }
 
 /*template for multiple choice answer */
@@ -558,7 +599,7 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 /* Hide the browser's default checkbox */
