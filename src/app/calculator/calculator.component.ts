@@ -3,6 +3,7 @@ import { JsonService } from '../services/serverCall';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AnswerService } from '../services/answerService';
+import { LoginService } from '../services/loginProvider';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class CalculatorComponent {
   keyArray = ["Company", "Materials", "Energy", "Water", "Biodiversity", "Society & Culture", "Health", "Value"]
   currentKey: number = 0
 
-  constructor(private jsonService: JsonService, private http: HttpClient, private router: Router, private answerservice: AnswerService) {
+  constructor(private jsonService: JsonService, private http: HttpClient, private router: Router, private answerservice: AnswerService, public login: LoginService) {
    
   }
   
@@ -111,8 +112,8 @@ export class CalculatorComponent {
     this.answerservice.pushAnswers(this.questionAnswer)
     console.log(this.questionAnswer)
     // function to push answers
+    //this.router.navigate(['/result'])
     this.router.navigate(['/result'])
-    
   }
 
   // Start Calc

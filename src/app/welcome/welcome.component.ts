@@ -21,8 +21,6 @@ export class WelcomeComponent {
   ngOnInit(){
     this.getScreenSize()
     this.loginState = this.loginService.getLoginState()
-    this.loginState = this.loginService.getLoginState()
-
     setInterval( ()=> console.log(window.outerWidth), 1000)
   }
 
@@ -30,8 +28,7 @@ export class WelcomeComponent {
   getScreenSize(){
     if (window.outerWidth > 1400){
       this.screen = "laptop"
-    }
-    
+    } 
   }
   // This allows the website to scroll smooth to the section
   scrollToTop() {

@@ -36,16 +36,26 @@
             <h1 class="companyTitle">Company Information</h1>
             <div class="companyGrid">
                 <div class="companyBox-1">
+                    <!--
                     <h2 class="companyAnswer">Company: {{getAnswers(7, 0)}}</h2>
                     <h2 class="companyAnswer">Country: {{getAnswers(7, 1)}}</h2>
                     <h2 class="companyAnswer">Employees: {{getAnswers(7,3)}}</h2>
+                    -->
+
+                    <h2 class="companyAnswer">Company: Test Company</h2>
+                    <h2 class="companyAnswer">Country: Greece</h2>
+                    <h2 class="companyAnswer">Employees: 10 - 15</h2>
+
                 </div>
                 <div class="companyBox-2">
+                    <h2 class="companyAnswer">Sector of activity: IT Department</h2>
+                    <!---
                     <h2 class="companyAnswer">Sector of activity: {{getAnswers(7, 4)}}</h2>
                     <h2 *ngIf="getAnswers(7, 5) == 'yes' " class="companyAnswer">Exporting (km): {{getAnswers(7, 6)}}</h2>
                     <h2 *ngIf="getAnswers(7, 5) == 'no' " class="companyAnswer">Exporting (km): - </h2>
                     <h2 *ngIf="getAnswers(7, 8) == 'yes' " class="companyAnswer">Importing (km): {{getAnswers(7, 9)}}</h2>
                     <h2 *ngIf="getAnswers(7, 8) == 'no' " class="companyAnswer">Importing (km): - </h2>
+                    -->
                 </div>
             </div>
         </div>
@@ -53,16 +63,18 @@
 
             <div class="pillarScoreBox-1">
                 <h1 class="pillarScoreTitle">Calculator Pillar Score</h1>
-                <h2 class="pillarAnswer">Materials: {{this.answerService.materialPoints}} </h2>
-                <h2 class="pillarAnswer">Energy: ... </h2>
-                <h2 class="pillarAnswer">Water: ... </h2>
-                <h2 class="pillarAnswer">Biodiversity: ... </h2>
-                <h2 class="pillarAnswer">Society & culture: ... </h2>
-                <h2 class="pillarAnswer">Health: ... </h2>
-                <h2 class="pillarAnswer">Value: ... </h2>
+                <h2 class="pillarAnswer">Materials: 20% </h2>
+                <h2 class="pillarAnswer">Energy: 60% </h2>
+                <h2 class="pillarAnswer">Water: 25% </h2>
+                <h2 class="pillarAnswer">Biodiversity: 75% </h2>
+                <h2 class="pillarAnswer">Society & culture: 80% </h2>
+                <h2 class="pillarAnswer">Health: 80% </h2>
+                <h2 class="pillarAnswer">Value: 75% </h2>
             </div>
             <div class="pillarScoreBox-2">
-                <div class="pillarScoreDiagram">DIAGRAM</div>
+                <div class="pillarScoreDiagram">
+                    
+                </div>
             </div>
         </div>
 
@@ -73,7 +85,7 @@
                     <h1 class="totalText">This is the estimate of your circular economy obtained from your answers. </h1>
                 </div>
                 <div class="totalBox-2">
-                    <h1 class="totalFinal">...%</h1>
+                    <h1 class="totalFinal">59%</h1>
                 </div>
             </div>
         </div>
@@ -93,24 +105,24 @@
                 </div>
                 <div class="feedbackCol-2">
 
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
-                    <h1 class="feedbaclCol-Answer">...%</h1>
+                    <h1 class="feedbaclCol-Answer">20%</h1>
+                    <h1 class="feedbaclCol-Answer">60%</h1>
+                    <h1 class="feedbaclCol-Answer">25%</h1>
+                    <h1 class="feedbaclCol-Answer">75%</h1>
+                    <h1 class="feedbaclCol-Answer">80%</h1>
+                    <h1 class="feedbaclCol-Answer">80%</h1>
+                    <h1 class="feedbaclCol-Answer">75%</h1>
                     
                 </div>
                 <div class="feedbackCol-3">
 
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
-                    <h1 class="feedbaclCol-feedback">we suggest.....</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, we recommend reducing virgin material as much as possible, increasing the use and reuse of materials, increasing the use of recycled materials, increasing separation and material to be recycled, and reusing packaging.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, we recommend to continue the monitoring of energy consumption and increase use of renewable energy sources.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, we recommend increasing the monitoring of water consumption and waste.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, you are on the right path to achieving a level close to circular excellence.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, you are on the right path to achieving a level close to circular excellence.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, you are on the right path to achieving a level close to circular excellence.</h1>
+                    <h1 class="feedbaclCol-feedback">According to your answers, you are on the right path to achieving a level close to circular excellence.</h1>
 
                 </div>
             </div>

@@ -18,11 +18,11 @@
                 </div>
                 <div class="navbar-menu">
                     <ul>
-                        <li><a [routerLink]="['/request']">request</a></li>
                         <li><a [routerLink]="['/result']">result</a></li>
                         <li><a (click)="scrollToInformation()">Information</a></li>
                         <li><a (click)="scrollToCalculator()">Calculator</a></li>
                         <li><a (click)="scrollToAbout()">About us</a></li>
+                        <li><a [routerLink]="['/request']">Contact</a></li>
                         <li><a [routerLink]="['/login']" *ngIf="this.loginState == false">Login</a></li>
                         <li><a *ngIf="this.loginState == true">Logged In</a></li>
                     </ul>

@@ -375,6 +375,11 @@ main{
     height: 60vh;
 }
 
+.pillarScoreDiagram{
+    background-image: url(../../assets/images/diagram.png);
+    background-size: cover;
+    background-position: 0rem -0vh;
+}
 
 /*-------------------------------------
 
@@ -494,8 +499,11 @@ main{
     grid-row: 1;
     padding-left: 1vh;
     border-left: 1px solid black;
+    width: 80vw; 
 }
-
+.feedbackCol-3 h1{
+    text-align: left;
+}
 
 /* 7.7 feedback column title */
 .feedbaclCol-Title{
