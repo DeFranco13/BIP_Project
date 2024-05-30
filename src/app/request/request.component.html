@@ -18,7 +18,7 @@
                 </div>
                 <div class="navbar-menu">
                     <ul>
-                        <li><a [routerLink]="['/welcome']" >Home</a></li>
+                        <li><a [routerLink]="['/welcome']" >Return to main page</a></li>
                     </ul>
                 </div>
             </nav>
@@ -27,16 +27,24 @@
     <!-- End Header -->
 
     <main>
-        <h1 class="mainTitle">Companies specializing in circular economy consultancy are part of this project, we'll be in contact very soon.</h1>
-        <h2 class="mainDescription">In this way, we want your organization to achieve excellence in the circular economy.</h2>
-
         <div class="contactBox">
           <h1 class="contactTitle">Please fill in the contact form</h1>
+          <h1 class="mainTitle">Companies specializing in circular economy consultancy are part of this project, we'll be in contact very soon.</h1>
+          <h2 class="mainDescription">In this way, we want your organization to achieve excellence in the circular economy.</h2>
           <div class="nameBox">
-            <h2 class="nameTitle">Name</h2> <input type="text" placeholder="Your Name"> 
+            <h2 class="nameTitle">Full Name:</h2> <input type="text" placeholder="Your Name" class="Contact-input"> 
           </div>
           <div class="inputBox">
-            <h2 class="inputTitle">Email</h2> <input type="text" placeholder="Your email"> <button>Submit</button>
+            <h2 class="inputTitle">Email:</h2> <input type="text" placeholder="Your email" class="Contact-input"> 
+          </div>
+          <div class="inputBox">
+            <h2 class="inputTitle" id="phone">Phone:</h2> <input type="text" placeholder="Your phone" class="Contact-input"> 
+          </div>
+          <div class="inputBox">
+            <h2 class="inputTitle" id="messagetext">Message:</h2> <input type="text" placeholder="Your message" class="Contact-input" id="messageinput"> 
+          </div>
+          <div class="button-container">
+            <button>Submit</button>
           </div>
         </div>
 
