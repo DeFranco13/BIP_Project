@@ -102,7 +102,7 @@ header nav{
 
 /* 2.4 logo section */
 header nav .navbar-header{
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-left: 6vw;
 }
 
@@ -232,7 +232,7 @@ hr {
     justify-content: center;
     align-items: center; 
     height: 10vh;
-    margin-top: 2vw; 
+    margin-top: 2.9vw; 
 }
 
 
@@ -291,7 +291,7 @@ button {
 
 
 /*Pillar screens*/
-.key1 {
+.pillar_container {
     width: 50vw;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -391,7 +391,7 @@ button {
 }
 /* Template for text questions where you select few option - not finished */
 
-.key1 p{
+.pillar_container p{
     color: #676a8171;
     font-weight: 700;
     font-size: 16px;
@@ -403,19 +403,19 @@ button {
     width: 42.7vw;
     background-color: #ffffff;
 }
-.key1 .questions-layout{
+.pillar_container .questions-layout{
     border-top: 1px solid black;
 }
-.key1 p:hover{
+.pillar_container p:hover{
     border-color: #999;
 }
 
-.key1 p:active{
+.pillar_container p:active{
     border-color: #00ff15;
 }
 
 /* Template for text questions where you select 1 option */
-.key1 select {
+.pillar_container select {
     margin-left: 3rem;
     margin-top: 1vw;
     width: 44vw;
@@ -427,17 +427,17 @@ button {
     font-size: 16px;
 }
 
-.key1 select:hover {
+.pillar_container select:hover {
     border-color: #999;
 }
 
-.key1 option {
+.pillar_container option {
     font-weight: 700;
     font-size: 16px;
 }
 /* Template for text questions agree/disagree/ */
 
-.radio{
+.Opinion_question{
     display: inline-flex;
     overflow:hidden;
     width: 45vw;
@@ -534,7 +534,7 @@ button {
 }
 
 /*template for the questions for you input custom answer */
-.key1 input {
+.pillar_container input {
     height: 2.5rem;
     margin-left: 1.5rem;
     margin-top: 2rem;
@@ -548,12 +548,12 @@ button {
     padding-left: 0.5rem;
     font-weight: 700;
 }
-.key1 input::placeholder {
+.pillar_container input::placeholder {
     color: #676a8171;
 
 }
 
-.key1 .text-question{
+.pillar_container .text-question{
     width: 44vw;
     box-sizing: border-box;
     padding: 10px;
@@ -564,7 +564,7 @@ button {
 }
 
 
-.key1 h1{
+.pillar_container h1{
     font-size: 24px;
     color: #6a6c81;
     font-weight: 600;
@@ -577,7 +577,7 @@ button {
     color: #00ff15;
 }
 
-.key1 div{
+.pillar_container div{
     font-size: 20px;
     color: #676a81;
     padding-left: 1.5rem;
