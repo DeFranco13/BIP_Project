@@ -66,6 +66,8 @@ body{
   background-color: rgb(255, 255, 255);
   font-family: 'Quicksand', sans-serif; 
   background-size: 200vh;
+  background-image: url(../../assets/images/calc_background.jpg);
+  background-size: 50%;
 }
 
 
@@ -114,7 +116,7 @@ header nav{
 
 /* 2.4 logo section */
 header nav .navbar-header{
-  margin-top: 2vh;
+  margin-top: 3vh;
   margin-left: 6vw;
 }
 
