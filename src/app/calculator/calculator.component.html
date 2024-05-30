@@ -23,7 +23,7 @@
     <body>
         <div *ngIf="boolCalculator == false" class="start-screen-calculator">
             <h1>Guide</h1>
-            <p>This calculator .... </p>
+            <p>Welcome to the Universal Circularity Calculator, your comprehensive tool for measuring the circularity rate of your company. This innovative calculator evaluates how effectively your business practices align with circular economy principles, helping you optimize resource use, minimize waste, and enhance sustainability. Start your journey towards a more circular future with our easy-to-use, insightful tool.</p>
             <p>By accessing and utilizing this calculator, you consent to the provision of the necessary data required for its operation. Please be advised that the data provided will solely be processed and will not be stored.</p>
             <p>Please, press the button to start!</p>
 
@@ -38,7 +38,7 @@
         <div *ngIf="boolCalculator == true && JsonArray" class="questions">
             <div *ngFor="let key of getObjectKeys(JsonArray); let j = index">
                 <!--This checks the current key like health etc this is important for the question pages-->
-                <div *ngIf="key == getCurrentPillar()" class="key1">
+                <div *ngIf="key == getCurrentPillar()" class="pillar_container">
                     <h1>{{ key }}</h1>
                     <div *ngFor="let question of JsonArray[key]?.questions; let i = index">
 
@@ -69,7 +69,7 @@
                         </div>
                         
                         <!--This checks type of answer and creates custom answer-->
-                        <div *ngIf="question.answer_style == 'Agree/Disagree' " class="radio">
+                        <div *ngIf="question.answer_style == 'Agree/Disagree' " class="Opinion_question">
                             <input (click)="pushAnswer(j, i, 'strong disagree')" type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1_{{i}}" name="radio_1_{{i}}">
                             <label class="Radio_label1" id="agree1_{{i}}" for="Radio1_{{i}}">Strongly Disagree</label>
                     
