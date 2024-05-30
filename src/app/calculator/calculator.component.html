@@ -70,20 +70,10 @@
                         
                         <!--This checks type of answer and creates custom answer-->
                         <div *ngIf="question.answer_style == 'Agree/Disagree' " class="Opinion_question">
-                            <input (click)="pushAnswer(j, i, 'strong disagree')" type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1_{{i}}" name="radio_1_{{i}}">
-                            <label class="Radio_label1" id="agree1_{{i}}" for="Radio1_{{i}}">Strongly Disagree</label>
-                    
-                            <input (click)="pushAnswer(j, i, 'disagree')" type="radio" value="Disagree" class="Radio_input" id="Radio2_{{i}}" name="radio_1_{{i}}">
-                            <label class="Radio_label" id="agree2_{{i}}" for="Radio2_{{i}}">Disagree</label>
-                            
-                            <input (click)="pushAnswer(j, i, 'neutral')" type="radio" value="Neutral" class="Radio_input" id="Radio3_{{i}}" name="radio_1_{{i}}">
-                            <label class="Radio_label" id="agree3_{{i}}" for="Radio3_{{i}}">Neutral</label>
-                                
-                            <input (click)="pushAnswer(j, i, 'agree')" type="radio" value="Agree" class="Radio_input" id="Radio4_{{i}}" name="radio_1_{{i}}">
-                            <label class="Radio_label" id="agree4_{{i}}" for="Radio4_{{i}}">Agree</label>
-
-                            <input (click)="pushAnswer(j, i, 'strongly agree')" type="radio" value="Strongly Agree" class="Radio_input" id="Radio5_{{i}}" name="radio_1_{{i}}">
-                            <label class="Radio_label5" id="agree5_{{i}}" for="Radio5_{{i}}">Strongly Agree</label>
+                            <div *ngFor="let answer of question.possible_answers">
+                                <input (click)="pushAnswer(j, i, answer.body)" type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1_{{i}}" name="radio_1_{{i}}">
+                                <label class="Radio_label1" id="agree1_{{i}}" for="Radio1_{{i}}">{{answer.body}}</label>
+                            </div>
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
