@@ -47,9 +47,11 @@ export class CalculatorComponent {
 
     // Now push the answer
     this.questionAnswer[iterationPillar][iterationRow].push(answer);
-    console.log(answer)
   }
 
+  pushAnswerMultipleChoice(iterationPillar: any, iterationRow: any, answer: any){
+    
+  }
   
   // Function to finish questions and start result
   SubmitResults(){

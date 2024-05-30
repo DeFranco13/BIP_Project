@@ -36,14 +36,16 @@
             <h1 class="companyTitle">Company Information</h1>
             <div class="companyGrid">
                 <div class="companyBox-1">
-                    <h2 class="companyAnswer">Company: ...</h2>
-                    <h2 class="companyAnswer">Country: ...</h2>
-                    <h2 class="companyAnswer">Employees: ...</h2>
+                    <h2 class="companyAnswer">Company: {{getAnswers(7, 0)}}</h2>
+                    <h2 class="companyAnswer">Country: {{getAnswers(7, 1)}}</h2>
+                    <h2 class="companyAnswer">Employees: {{getAnswers(7,3)}}</h2>
                 </div>
                 <div class="companyBox-2">
-                    <h2 class="companyAnswer">Sector of activity: ...</h2>
-                    <h2 class="companyAnswer">Exporting (km): ...</h2>
-                    <h2 class="companyAnswer">Importing (km): ...</h2>
+                    <h2 class="companyAnswer">Sector of activity: {{getAnswers(7, 4)}}</h2>
+                    <h2 *ngIf="getAnswers(7, 5) == 'yes' " class="companyAnswer">Exporting (km): {{getAnswers(7, 6)}}</h2>
+                    <h2 *ngIf="getAnswers(7, 5) == 'no' " class="companyAnswer">Exporting (km): - </h2>
+                    <h2 *ngIf="getAnswers(7, 8) == 'yes' " class="companyAnswer">Importing (km): {{getAnswers(7, 9)}}</h2>
+                    <h2 *ngIf="getAnswers(7, 8) == 'no' " class="companyAnswer">Importing (km): - </h2>
                 </div>
             </div>
         </div>
