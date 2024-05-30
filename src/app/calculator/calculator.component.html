@@ -45,23 +45,24 @@
                         <div class="questions-layout">{{question.question}}</div>
 
                         <div *ngIf="question.answer_style == 'Scale' " class="SliderDiv">
-                            <h1><span id="output">{{question.possible_answers.min}}</span></h1>
-                            <input (click)="pushAnswer(j, i, 'fixitlater')" min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers}}">
+
+                            <h1><span id="output">{{inputElement.value}}</span></h1>
+                            <input  min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value)" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
                         </div>
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">
-                            <div *ngFor="let answer of question.possible_answers">
+                            <div *ngFor="let answer of question.possible_answers; let k = index">
                                 <label class="multicontainer">"{{answer.body}}"
-                                    <input type="checkbox" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <input type="checkbox" (click)="pushAnswer(j, i, answer.body)" name="slider_{{i}}">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                         </div>
 
-                        <div *ngIf="question.answer_style == 'One choice'  ">
+                        <div *ngIf="question.answer_style == 'One Choice'">
                             <div *ngFor="let answer of question.possible_answers">
                                 <label class="multicontainer">"{{answer.body}}"
-                                    <input type="radio" (click)="pushAnswer(j, i, 'fixitlater')" name="slider_{{i}}">
+                                    <input type="radio" (click)="pushAnswer(j, i, answer.body)" name="slider_{{i}}">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -69,20 +70,20 @@
                         
                         <!--This checks type of answer and creates custom answer-->
                         <div *ngIf="question.answer_style == 'Agree/Disagree' " class="radio">
-                            <input type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1" name="radio_1">
-                            <label class="Radio_label" id="agree1" for="Radio1">Strongly Disagree</label>
+                            <input (click)="pushAnswer(j, i, 'strong disagree')" type="radio" value="Strongly Disagree" class="Radio_input" id="Radio1_{{i}}" name="radio_1_{{i}}">
+                            <label class="Radio_label" id="agree1_{{i}}" for="Radio1_{{i}}">Strongly Disagree</label>
                     
-                            <input type="radio" value="Disagree" class="Radio_input" id="Radio2" name="radio_1">
-                            <label class="Radio_label" id="agree2" for="Radio2">Disagree</label>
+                            <input (click)="pushAnswer(j, i, 'disagree')" type="radio" value="Disagree" class="Radio_input" id="Radio2_{{i}}" name="radio_1_{{i}}">
+                            <label class="Radio_label" id="agree2_{{i}}" for="Radio2_{{i}}">Disagree</label>
                             
-                            <input type="radio" value="Neutral" class="Radio_input" id="Radio3" name="radio_1">
-                            <label class="Radio_label" id="agree3" for="Radio3">Neutral</label>
+                            <input (click)="pushAnswer(j, i, 'neutral')" type="radio" value="Neutral" class="Radio_input" id="Radio3_{{i}}" name="radio_1_{{i}}">
+                            <label class="Radio_label" id="agree3_{{i}}" for="Radio3_{{i}}">Neutral</label>
                                 
-                            <input type="radio" value="Agree" class="Radio_input" id="Radio4" name="radio_1">
-                            <label class="Radio_label" id="agree4" for="Radio4">Agree</label>
+                            <input (click)="pushAnswer(j, i, 'agree')" type="radio" value="Agree" class="Radio_input" id="Radio4_{{i}}" name="radio_1_{{i}}">
+                            <label class="Radio_label" id="agree4_{{i}}" for="Radio4_{{i}}">Agree</label>
 
-                            <input type="radio" value="Strongly Agree" class="Radio_input" id="Radio5" name="radio_1">
-                            <label class="Radio_label" id="agree5" for="Radio5">Strongly Agree</label>
+                            <input (click)="pushAnswer(j, i, 'strongly agree')" type="radio" value="Strongly Agree" class="Radio_input" id="Radio5_{{i}}" name="radio_1_{{i}}">
+                            <label class="Radio_label" id="agree5_{{i}}" for="Radio5_{{i}}">Strongly Agree</label>
                         </div>
 
                         <div *ngIf="question.answer_style == 'Yes/No' " class="yesno">
@@ -93,9 +94,7 @@
                             <label class="Yesno_label_R" id="yes2_{{i}}" for="Yesno2_{{i}}">No</label>             
                         </div>
                         
-                        <input *ngIf="question.answer_style == 'Custom' " type="text" class="Custom" placeholder="Enter your answer here">
-
-                         
+                        <input *ngIf="question.answer_style == 'Custom' "type="text" class="Custom" placeholder="Enter your answer here" #inputElement (change)="pushAnswer(j, i, inputElement.value)">
 
                     </div>
 

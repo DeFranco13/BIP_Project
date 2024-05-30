@@ -47,6 +47,7 @@ export class CalculatorComponent {
 
     // Now push the answer
     this.questionAnswer[iterationPillar][iterationRow].push(answer);
+    console.log(answer)
   }
 
   
