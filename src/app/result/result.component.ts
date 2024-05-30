@@ -18,23 +18,9 @@ export class ResultComponent {
   bioArray: any = []
   materialArray: any = []
 
-  healthPoints: any = 0
-  valuePoints: any = 0
-  waterPoints: any = 0
-  energyPoints: any = 0
-  socPoints: any = 0
-  bioPoints: any = 0
-  materialPoints: any = 0
+ 
 
-  healthMax: any = 0
-  valueMax: any = 0
-  waterMax: any = 0
-  energyMax: any = 0
-  socMax: any = 0
-  bioMax: any = 0
-  materialMax: any = 0
-
-  constructor(private answerService: AnswerService){
+  constructor(public answerService: AnswerService){
 
   }
 
@@ -42,6 +28,10 @@ export class ResultComponent {
     this.array = this.answerService.getAnswer()
     this.fixArray()
     console.log(this.healthArray)
+  }
+
+  getMaterial(){
+    return this.answerService.getValue("material")
   }
 
   getAnswers(pillar: number, iteration: number){
@@ -68,9 +58,18 @@ export class ResultComponent {
       return this.materialArray[iteration]
     }
     else if (pillar == 7){
-      return this.companyArray[iteration]
+      return this.nullSaveArrayRead(this.companyArray, iteration);
     }
   }
+
+private nullSaveArrayRead(arr:any, index:number):any {
+  if(arr != undefined) {
+    return arr[index];
+  } else {
+    return "";
+  }
+}
+
 
   fixArray(){
     this.healthArray = this.array[0]
