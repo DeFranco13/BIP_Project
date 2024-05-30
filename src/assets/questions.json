@@ -4,11 +4,15 @@
             {
                 "question": "Is your company actively promoting wellness between emloyees and work-life balance?",
                 "context": "By employee wellness we mean: Health insurance, recreational and social activities, physical activities, gym, flexible working hours, etc.",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "Have you established a plan to guarantee worker safety standards?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "Which of the following best describes the organization's approach to employee wellness programs?",
@@ -63,10 +67,13 @@
             {
                 "question": "Does the organization engage with local communities through events, programs, or partnerships?",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Agree": 5,
-                    "Disagree": 0
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 3},
+                    {"body": "Strongly Agree", "value": 4}
+                ]
             },
             {
                 "question": "To what extent does the organization contribute to education and awareness on social and cultural issues?",
@@ -79,7 +86,9 @@
             {
                 "question": "Are the measures for respecting and preserving cultural heritage communicated to all levels within the organization?",
                 "context": "By measures we mean: promoting of awarness, investing in conservation projects, physically protect cultural heritage sites, adapting sustainable practices that minimize the environmental impact on cultural heritage sites.",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             }
         ]
     },
@@ -88,47 +97,47 @@
             {
                 "question": "To what extent do you agree with this statement: The company have policies or initiatives in place to protect local ecosystems.",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 3,
-                    "Strongly Agree": 4
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 3},
+                    {"body": "Strongly Agree", "value": 4}
+                ]
             },
             {
                 "question": "To what extent do you agree with this statement: The company conduct biodiversity assessments or surveys to understand its impact.",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 3,
-                    "Strongly Agree": 4
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 3},
+                    {"body": "Strongly Agree", "value": 4}
+                ]
             },
             {
                 "question": "To what extent do you agree with this statement: The company is involved in habitat restoration or conservation projects.",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 3,
-                    "Strongly Agree": 4
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 3},
+                    {"body": "Strongly Agree", "value": 4}
+                ]
             },
             {
                 "question": "To what extent do you agree with this statement: The company has measures in place to prevent harm to endangered species?",
                 "context": "By measures we mean: Developing and enforcing a biodiversity policy, conduct environmental impact assesments, using sustainable methods in resource extraction and agriculture, promoting awareness about protecting endangered species, supporting habitat restoration projects, reporting on biodiversity efforts in sustainability reports, etc.",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 3,
-                    "Strongly Agree": 4
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 3},
+                    {"body": "Strongly Agree", "value": 4}
+                ]
             },
             {
                 "question": "Which of the following best describes the company's approach to biodiversity conservation?",
@@ -147,14 +156,19 @@
             {
                 "question": "What is your company's weekly water consumption (m3)?",
                 "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 1000000
-                }
+                "possible_answers": [
+                    {"body": "0 - 5000", "value": 5},
+                    {"body": "5001 - 15000", "value": 4},
+                    {"body": "15001 - 25000", "value": 3},
+                    {"body": "25001 - 50000", "value": 2},
+                    {"body": "50001 - 100000", "value": 1},
+                    {"body": "100000+", "value": 0}
+                ]
             },
             {
                 "question": "What percentage of water is wasted?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -162,36 +176,40 @@
             },
             {
                 "question": "Is your company monitoring water consumption and wastage?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "Have your company implemented strategies to minimize water consumption?",
                 "context": "By strategies we mean: investing in water efficient technologies and equipment, optimalization production processes to minimize water waste, implementation of wastewater treatment and recycling, conduct water audits, explore alternative water sources, water monitoring & reporting, continuous improvement",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 4,
-                    "Strongly Agree": 6
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 4},
+                    {"body": "Strongly Agree", "value": 6}
+                ]
             },
             {
                 "question": "Is your company actively promoting water stewardship in the community?",
                 "context": "Water stewardship is the responsible management and conservation of water resources to ensure sustainable use, protect water quality, and address water-related risks through collaboration and equitable practices.",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 4,
-                    "Strongly Agree": 6
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 4},
+                    {"body": "Strongly Agree", "value": 6}
+                ]
             },
             {
                 "question": "Does your company operate a closed water circuit?",
                 "context": "Closed water circuits are commonly used in industrial processes, HVAC (heating, ventilation, and air conditioning) systems, power plants, and other applications where water is used for cooling, heating, or process operations. By recycling and reusing water within a closed loop, these systems help conserve water resources, reduce water consumption, and minimize environmental impacts associated with water discharge.",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             }
         ]
     },
@@ -214,15 +232,15 @@
             },
             {
                 "question": "Does your company produce energy to be sold?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "No"
             },
             {
-                "question": "If you have answered YES in question 2: State the amount",
-                "answer_style":"Scale",
-                "possible_answers": {
-                    "min": 1,
-                    "max": 100
-                }
+                "question": "If YES, does your company produce energy from renewable sources?",
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "What is the amount of energy consumed in the year (MWh)?",
@@ -237,6 +255,7 @@
             {
                 "question": "What percentage of energy comes from renewable sources?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -246,25 +265,30 @@
                 "question": "Is the energy consumption properly optimized in your company?",
                 "context": "By properly we mean: conduction of energy audits, implementation of energy management systems, energy efficient equipment, optimalization of production processes, implementation of energy recovery systems, usage of renewable energy, energy monitoring, continuous improvment",
                 "answer_style": "Agree/Disagree",
-                "possible_answers": {
-                    "Strongly Disagree": 0,
-                    "Disagree": 1,
-                    "Neutral": 2,
-                    "Agree": 4,
-                    "Strongly Agree": 6
-                }
+                "possible_answers": [
+                    {"body": "Strongly Disagree", "value": 0},
+                    {"body": "Disagree", "value": 1},
+                    {"body": "Neutral", "value": 2},
+                    {"body": "Agree", "value": 4},
+                    {"body": "Strongly Agree", "value": 6}
+                ]
             },
             {
                 "question": "Is the energy consumption monitored in your company?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "How much co2 does the production process emit (CO2g/kwh)?",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 10000
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "0 - 1000", "value": 4},
+                    {"body": "1001 - 4000", "value": 3},
+                    {"body": "4001 - 8000", "value": 2},
+                    {"body": "8001 - 12000", "value": 1},
+                    {"body": "12000+", "value": 0}
+                ]
             },
             {
                 "question": "How do you transport your goods?",
@@ -297,6 +321,7 @@
                 "question": "What percentage of virgin material is used?",
                 "context": "The raw material is made up of a set of essential elements for various production processes, which can be obtained directly from nature (through forestry, agriculture or mineral exploitation). This material is the first part of the transformation chain needed to obtain the final product.",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -305,6 +330,7 @@
             {
                 "question": "What percentage of reused material is used?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -317,6 +343,7 @@
             {
                 "question": "IF YES, what % of it can be repurposed?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -325,6 +352,7 @@
             {
                 "question": "IF NO, what % of it can be recycled/composted",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -333,6 +361,7 @@
             {
                 "question": "What percentage of purchases do you make in your country?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -359,11 +388,14 @@
             },
             {
                 "question": "Industrial waste is sent for treatment?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "IF YES state the %",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -371,11 +403,14 @@
             },
             {
                 "question": "Can your product be reuse/repurposed into new product after its use?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10,
+                "correct_answer": "Yes"
             },
             {
                 "question": "What is the % recyclability of your products",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -384,6 +419,7 @@
             {
                 "question": "If your packaging in manufactured from raw materials, what % the packaging can be reused?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
@@ -391,7 +427,8 @@
             },
             {
                 "question": "Does your company performs waste separation?",
-                "answer_style": "Yes/No"
+                "answer_style": "Yes/No",
+                "value": 10
             },
             {
                 "question": "What products are being separated?",
@@ -407,9 +444,11 @@
             {
                 "question": "What is the % of all separated products?",
                 "answer_style": "Scale",
+                "value": 0.1,
                 "possible_answers": {
                     "min": 1,
                     "max": 100
+
                 }
             }
         ]
@@ -456,11 +495,14 @@
             },
             {
                 "question": "If YES, what is the total distance?",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 100000
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "0 - 1000km", "value": 4},
+                    {"body": "1001km - 5000km", "value": 3},
+                    {"body": "5001km - 10000km", "value": 2},
+                    {"body": "10001km - 15000km", "value": 1},
+                    {"body": "15000km+", "value": 0}
+                ]
             },
             {
                 "question": "How do you export your products?",
@@ -478,11 +520,14 @@
             },
             {
                 "question": "If YES, what is the total distance?",
-                "answer_style": "Scale",
-                "possible_answers": {
-                    "min": 0,
-                    "max": 100000
-                }
+                "answer_style": "One Choice",
+                "possible_answers": [
+                    {"body": "0 - 1000km", "value": 4},
+                    {"body": "1001km - 5000km", "value": 3},
+                    {"body": "5001km - 10000km", "value": 2},
+                    {"body": "10001km - 15000km", "value": 1},
+                    {"body": "15000km+", "value": 0}
+                ]
             },
             {
                 "question": "How do you import your products?",
