@@ -47,7 +47,7 @@
                         <div *ngIf="question.answer_style == 'Scale' " class="SliderDiv">
 
                             <h1><span id="output">{{inputElement.value}}</span></h1>
-                            <input  min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value, question.value)" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
+                            <input  min="{{question.possible_answers.min}}" max="{{question.possible_answers.max}}"  #inputElement (change)="pushAnswer(j, i, inputElement.value, question.value )" type="range" class="slider" id="slider_{{i}}" value="{{question.possible_answers.min}}" >
                         </div>
 
                         <div *ngIf="question.answer_style == 'Multiple Choice' ">

@@ -58,11 +58,17 @@ export class ResultComponent {
       return this.materialArray[iteration]
     }
     else if (pillar == 7){
-      return this.companyArray[iteration]
+      return this.nullSaveArrayRead(this.companyArray, iteration);
     }
   }
 
-
+private nullSaveArrayRead(arr:any, index:number):any {
+  if(arr != undefined) {
+    return arr[index];
+  } else {
+    return "";
+  }
+}
 
 
   fixArray(){
