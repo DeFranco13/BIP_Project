@@ -113,7 +113,7 @@ export class CalculatorComponent {
     console.log(this.questionAnswer)
     // function to push answers
     //this.router.navigate(['/result'])
-    this.router.navigate(['/result'])
+    this.router.navigate(['/login'])
   }
 
   // Start Calc

@@ -26,7 +26,7 @@ export class WelcomeComponent {
 
 
   getScreenSize(){
-    if (window.outerWidth > 1400){
+    if (window.outerWidth >= 1400){
       this.screen = "laptop"
     } 
   }
